@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Title: 3. Deleted loops in N2 (15) -->
+<!-- Creator: Pajek 5.09: http://mrvar.fdv.uni-lj.si/pajek -->
+<!-- CreationDate: 04-16-2021, 5:16:47 -->
+<svg xml:space="preserve" viewBox="0 0 691 728" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<title>3. Deleted loops in N2 (15)</title>
+<g inkscape:groupmode="layer" id="PajekSig" inkscape:label="PajekSignature">
+<g transform="translate(3 710)">
+<g transform="scale(0.1)">
+<g transform="matrix(1 0 0 -1 0 96)">
+<path d="M   7.67  49.98 L  31.76  72.76 L  46.91  78.63
+         L  57.23  80.49 M  72.86  65.23 L  65.73  83.25
+         L  57.06  75.49 L  56.75  68.65 M  76.27  68.03
+         L  75.65  84.50 L  93.92  91.02 L 107.24  74.87
+         M  80.29  67.72 L  89.28  84.81 L 104.77  81.70
+         L 116.23  73.31 L 121.18  59.33 M  56.75  81.08
+         L  71.31  64.30"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  86.18  70.21 L  91.45  73.00 L  95.78  69.58
+         M  91.14  60.88 L  96.09  62.75 L  98.26  59.33"
+         style="fill:none; stroke:saddlebrown; stroke-width:1.5;"/>
+<path d="M  81.07  49.08 L  87.81  49.08 L  93.30  54.38
+         L  93.30  60.88 L  93.30  67.39 L  87.81  72.69
+         L  81.07  72.69 L  74.33  72.69 L  68.83  67.39
+         L  68.83  60.88 L  68.83  54.38 L  74.33  49.08
+         L  81.07  49.08 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;"/>
+<path d="M  54.63  37.53 L  68.53  43.56 L  75.39  55.85
+         L  69.90  65.35 L  64.41  72.86 L  48.60  74.06
+         L  34.71  68.04 L  20.81  55.02 L  15.95  40.72
+         L  17.44  33.22 L  24.92  28.72 L  40.73  30.51
+         L  54.63  37.53 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;" />
+<path d="M  77.82  50.63 L 103.84  59.33 L 131.10  43.80
+         L 139.46  27.95 L 139.15  15.83 M  35.99   5.27
+         L  47.15  32.92 L  61.71  50.01 L  70.07  46.90
+         L  82.77  45.04 L  83.39  27.02 L  65.42  12.11
+         M  68.52  50.63 L  91.14  49.39 L 103.53  43.17
+         L 117.16  22.67 L 115.30   8.38"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  41.57  54.98 L  60.16  64.61 M  52.41  66.17
+         L  57.99  57.47"
+         style="fill:none; stroke:white; stroke-width:5;"/>
+</g>
+</g>
+<animateMotion dur="20s" path="M3 0 L673 0" begin="120s" fill="freeze"/>
+</g>
+<g transform="translate(3 710)">
+<g transform="scale(0.1)">
+<text x="5" y="140" style="font-family:Brush Script MT;font-size:75px;fill:green;">Pajek</text>
+</g>
+<animateMotion dur="0.1s" path="M3 0 L673 0" begin="120s" fill="freeze"/>
+</g>
+</g>      <!-- Layer Signature -->
+
+<g inkscape:groupmode="layer" id="PajekNet" inkscape:label="PajekNetwork">
+
+<!-- Edge:     1    2 -->
+<line x1="410.02" y1="345.00" x2="105.61" y2="453.07" style="stroke-width:2.96;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1    3 -->
+<line x1="410.02" y1="345.00" x2="210.39" y2="69.47" style="stroke-width:2.46;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1    4 -->
+<line x1="410.02" y1="345.00" x2="325.10" y2="688.22" style="stroke-width:0.08;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1    5 -->
+<line x1="410.02" y1="345.00" x2="37.22" y2="198.92" style="stroke-width:2.42;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1    6 -->
+<line x1="410.02" y1="345.00" x2="521.07" y2="235.79" style="stroke-width:0.26;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1    7 -->
+<line x1="410.02" y1="345.00" x2="632.65" y2="392.25" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1    8 -->
+<line x1="410.02" y1="345.00" x2="397.54" y2="560.89" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1    9 -->
+<line x1="410.02" y1="345.00" x2="127.39" y2="680.85" style="stroke-width:0.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1   10 -->
+<line x1="410.02" y1="345.00" x2="196.05" y2="388.94" style="stroke-width:0.14;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1   11 -->
+<line x1="410.02" y1="345.00" x2="370.32" y2="196.55" style="stroke-width:4.32;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1   12 -->
+<line x1="410.02" y1="345.00" x2="457.45" y2="39.78" style="stroke-width:0.02;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1   14 -->
+<line x1="410.02" y1="345.00" x2="316.27" y2="407.94" style="stroke-width:0.94;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2    3 -->
+<line x1="105.61" y1="453.07" x2="210.39" y2="69.47" style="stroke-width:5.12;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2    4 -->
+<line x1="105.61" y1="453.07" x2="325.10" y2="688.22" style="stroke-width:3.14;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2    5 -->
+<line x1="105.61" y1="453.07" x2="37.22" y2="198.92" style="stroke-width:5.48;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2    6 -->
+<line x1="105.61" y1="453.07" x2="521.07" y2="235.79" style="stroke-width:0.24;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2    7 -->
+<line x1="105.61" y1="453.07" x2="632.65" y2="392.25" style="stroke-width:0.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2    8 -->
+<line x1="105.61" y1="453.07" x2="397.54" y2="560.89" style="stroke-width:2.92;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2    9 -->
+<line x1="105.61" y1="453.07" x2="127.39" y2="680.85" style="stroke-width:2.92;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2   10 -->
+<line x1="105.61" y1="453.07" x2="196.05" y2="388.94" style="stroke-width:0.10;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2   11 -->
+<line x1="105.61" y1="453.07" x2="370.32" y2="196.55" style="stroke-width:7.50;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2   12 -->
+<line x1="105.61" y1="453.07" x2="457.45" y2="39.78" style="stroke-width:0.02;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2   14 -->
+<line x1="105.61" y1="453.07" x2="316.27" y2="407.94" style="stroke-width:3.98;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3    4 -->
+<line x1="210.39" y1="69.47" x2="325.10" y2="688.22" style="stroke-width:3.34;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3    5 -->
+<line x1="210.39" y1="69.47" x2="37.22" y2="198.92" style="stroke-width:5.38;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3    6 -->
+<line x1="210.39" y1="69.47" x2="521.07" y2="235.79" style="stroke-width:0.38;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3    7 -->
+<line x1="210.39" y1="69.47" x2="632.65" y2="392.25" style="stroke-width:0.02;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3    8 -->
+<line x1="210.39" y1="69.47" x2="397.54" y2="560.89" style="stroke-width:3.16;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3    9 -->
+<line x1="210.39" y1="69.47" x2="127.39" y2="680.85" style="stroke-width:3.82;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3   10 -->
+<line x1="210.39" y1="69.47" x2="196.05" y2="388.94" style="stroke-width:0.20;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3   11 -->
+<line x1="210.39" y1="69.47" x2="370.32" y2="196.55" style="stroke-width:12.84;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3   12 -->
+<line x1="210.39" y1="69.47" x2="457.45" y2="39.78" style="stroke-width:0.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3   14 -->
+<line x1="210.39" y1="69.47" x2="316.27" y2="407.94" style="stroke-width:4.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4    5 -->
+<line x1="325.10" y1="688.22" x2="37.22" y2="198.92" style="stroke-width:3.26;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4    6 -->
+<line x1="325.10" y1="688.22" x2="521.07" y2="235.79" style="stroke-width:0.32;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4    7 -->
+<line x1="325.10" y1="688.22" x2="632.65" y2="392.25" style="stroke-width:0.26;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4    8 -->
+<line x1="325.10" y1="688.22" x2="397.54" y2="560.89" style="stroke-width:5.10;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4    9 -->
+<line x1="325.10" y1="688.22" x2="127.39" y2="680.85" style="stroke-width:4.76;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4   10 -->
+<line x1="325.10" y1="688.22" x2="196.05" y2="388.94" style="stroke-width:0.12;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4   11 -->
+<line x1="325.10" y1="688.22" x2="370.32" y2="196.55" style="stroke-width:5.80;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4   14 -->
+<line x1="325.10" y1="688.22" x2="316.27" y2="407.94" style="stroke-width:3.76;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5    6 -->
+<line x1="37.22" y1="198.92" x2="521.07" y2="235.79" style="stroke-width:0.24;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5    7 -->
+<line x1="37.22" y1="198.92" x2="632.65" y2="392.25" style="stroke-width:0.14;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5    8 -->
+<line x1="37.22" y1="198.92" x2="397.54" y2="560.89" style="stroke-width:3.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5    9 -->
+<line x1="37.22" y1="198.92" x2="127.39" y2="680.85" style="stroke-width:3.02;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5   10 -->
+<line x1="37.22" y1="198.92" x2="196.05" y2="388.94" style="stroke-width:0.20;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5   11 -->
+<line x1="37.22" y1="198.92" x2="370.32" y2="196.55" style="stroke-width:6.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5   12 -->
+<line x1="37.22" y1="198.92" x2="457.45" y2="39.78" style="stroke-width:0.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5   14 -->
+<line x1="37.22" y1="198.92" x2="316.27" y2="407.94" style="stroke-width:3.50;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6    7 -->
+<line x1="521.07" y1="235.79" x2="632.65" y2="392.25" style="stroke-width:0.60;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6    8 -->
+<line x1="521.07" y1="235.79" x2="397.54" y2="560.89" style="stroke-width:0.10;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6    9 -->
+<line x1="521.07" y1="235.79" x2="127.39" y2="680.85" style="stroke-width:0.20;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   10 -->
+<line x1="521.07" y1="235.79" x2="196.05" y2="388.94" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   11 -->
+<line x1="521.07" y1="235.79" x2="370.32" y2="196.55" style="stroke-width:5.54;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   12 -->
+<line x1="521.07" y1="235.79" x2="457.45" y2="39.78" style="stroke-width:0.10;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   13 -->
+<line x1="521.07" y1="235.79" x2="558.92" y2="502.95" style="stroke-width:0.02;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   14 -->
+<line x1="521.07" y1="235.79" x2="316.27" y2="407.94" style="stroke-width:0.82;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7    8 -->
+<line x1="632.65" y1="392.25" x2="397.54" y2="560.89" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7    9 -->
+<line x1="632.65" y1="392.25" x2="127.39" y2="680.85" style="stroke-width:0.12;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7   10 -->
+<line x1="632.65" y1="392.25" x2="196.05" y2="388.94" style="stroke-width:0.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7   11 -->
+<line x1="632.65" y1="392.25" x2="370.32" y2="196.55" style="stroke-width:0.80;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7   12 -->
+<line x1="632.65" y1="392.25" x2="457.45" y2="39.78" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7   13 -->
+<line x1="632.65" y1="392.25" x2="558.92" y2="502.95" style="stroke-width:0.02;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7   14 -->
+<line x1="632.65" y1="392.25" x2="316.27" y2="407.94" style="stroke-width:0.26;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8    9 -->
+<line x1="397.54" y1="560.89" x2="127.39" y2="680.85" style="stroke-width:6.84;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   10 -->
+<line x1="397.54" y1="560.89" x2="196.05" y2="388.94" style="stroke-width:0.08;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   11 -->
+<line x1="397.54" y1="560.89" x2="370.32" y2="196.55" style="stroke-width:6.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   14 -->
+<line x1="397.54" y1="560.89" x2="316.27" y2="407.94" style="stroke-width:5.78;stroke:rgb(0,112,145)"/>
+<!-- Edge:     9   10 -->
+<line x1="127.39" y1="680.85" x2="196.05" y2="388.94" style="stroke-width:0.10;stroke:rgb(0,112,145)"/>
+<!-- Edge:     9   11 -->
+<line x1="127.39" y1="680.85" x2="370.32" y2="196.55" style="stroke-width:6.58;stroke:rgb(0,112,145)"/>
+<!-- Edge:     9   14 -->
+<line x1="127.39" y1="680.85" x2="316.27" y2="407.94" style="stroke-width:6.56;stroke:rgb(0,112,145)"/>
+<!-- Edge:    10   11 -->
+<line x1="196.05" y1="388.94" x2="370.32" y2="196.55" style="stroke-width:0.88;stroke:rgb(0,112,145)"/>
+<!-- Edge:    10   12 -->
+<line x1="196.05" y1="388.94" x2="457.45" y2="39.78" style="stroke-width:0.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:    10   14 -->
+<line x1="196.05" y1="388.94" x2="316.27" y2="407.94" style="stroke-width:0.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:    11   12 -->
+<line x1="370.32" y1="196.55" x2="457.45" y2="39.78" style="stroke-width:0.42;stroke:rgb(0,112,145)"/>
+<!-- Edge:    11   14 -->
+<line x1="370.32" y1="196.55" x2="316.27" y2="407.94" style="stroke-width:17.34;stroke:rgb(0,112,145)"/>
+<!-- Edge:    12   14 -->
+<line x1="457.45" y1="39.78" x2="316.27" y2="407.94" style="stroke-width:0.04;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1   15 -->
+<line x1="410.02" y1="345.00" x2="525.83" y2="634.77" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2   15 -->
+<line x1="105.61" y1="453.07" x2="525.83" y2="634.77" style="stroke-width:0.52;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3   15 -->
+<line x1="210.39" y1="69.47" x2="525.83" y2="634.77" style="stroke-width:0.50;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4   15 -->
+<line x1="325.10" y1="688.22" x2="525.83" y2="634.77" style="stroke-width:0.46;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5   15 -->
+<line x1="37.22" y1="198.92" x2="525.83" y2="634.77" style="stroke-width:0.58;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   15 -->
+<line x1="521.07" y1="235.79" x2="525.83" y2="634.77" style="stroke-width:0.30;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7   15 -->
+<line x1="632.65" y1="392.25" x2="525.83" y2="634.77" style="stroke-width:0.12;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   15 -->
+<line x1="397.54" y1="560.89" x2="525.83" y2="634.77" style="stroke-width:0.46;stroke:rgb(0,112,145)"/>
+<!-- Edge:     9   15 -->
+<line x1="127.39" y1="680.85" x2="525.83" y2="634.77" style="stroke-width:0.46;stroke:rgb(0,112,145)"/>
+<!-- Edge:    10   15 -->
+<line x1="196.05" y1="388.94" x2="525.83" y2="634.77" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:    11   15 -->
+<line x1="370.32" y1="196.55" x2="525.83" y2="634.77" style="stroke-width:1.30;stroke:rgb(0,112,145)"/>
+<!-- Edge:    12   15 -->
+<line x1="457.45" y1="39.78" x2="525.83" y2="634.77" style="stroke-width:0.08;stroke:rgb(0,112,145)"/>
+<!-- Edge:    13   15 -->
+<line x1="558.92" y1="502.95" x2="525.83" y2="634.77" style="stroke-width:0.02;stroke:rgb(0,112,145)"/>
+<!-- Edge:    14   15 -->
+<line x1="316.27" y1="407.94" x2="525.83" y2="634.77" style="stroke-width:0.64;stroke:rgb(0,112,145)"/>
+
+<!-- Vertex:     1 -->
+<ellipse cx="410.02" cy="345.00" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="415.20" y="364.32" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Azer</text>
+<!-- Vertex:     2 -->
+<ellipse cx="105.61" cy="453.07" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="110.78" y="472.39" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Armen</text>
+<!-- Vertex:     3 -->
+<ellipse cx="210.39" cy="69.47" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="215.56" y="88.79" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Belorus</text>
+<!-- Vertex:     4 -->
+<ellipse cx="325.10" cy="688.22" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="330.27" y="707.53" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Estonia</text>
+<!-- Vertex:     5 -->
+<ellipse cx="37.22" cy="198.92" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="42.40" y="218.24" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Georgia</text>
+<!-- Vertex:     6 -->
+<ellipse cx="521.07" cy="235.79" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="526.24" y="255.10" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Kazah</text>
+<!-- Vertex:     7 -->
+<ellipse cx="632.65" cy="392.25" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="637.83" y="411.57" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Kirgiz</text>
+<!-- Vertex:     8 -->
+<ellipse cx="397.54" cy="560.89" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="402.71" y="580.21" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Latv</text>
+<!-- Vertex:     9 -->
+<ellipse cx="127.39" cy="680.85" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="132.56" y="700.17" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Litva</text>
+<!-- Vertex:    10 -->
+<ellipse cx="196.05" cy="388.94" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="201.23" y="408.26" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Moldav</text>
+<!-- Vertex:    11 -->
+<ellipse cx="370.32" cy="196.55" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="375.49" y="215.87" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Russia</text>
+<!-- Vertex:    12 -->
+<ellipse cx="457.45" cy="39.78" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="462.63" y="59.10" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Tadjik</text>
+<!-- Vertex:    13 -->
+<ellipse cx="558.92" cy="502.95" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="564.10" y="522.27" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Turkmen</text>
+<!-- Vertex:    14 -->
+<ellipse cx="316.27" cy="407.94" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="321.45" y="427.26" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Ukraina</text>
+<!-- Vertex:    15 -->
+<ellipse cx="525.83" cy="634.77" rx="10.00" ry="10.00" style="fill:rgb(255,217,188);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="531.01" y="654.09" style="font-family:Arial Unicode MS;font-weight: bold;font-size:15px;fill:rgb(173,0,0)">Uzbekistan</text>
+</g>         <!-- Layer Network -->
+</svg>
