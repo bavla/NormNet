@@ -40,7 +40,7 @@ Using the Jaccard similarity we can now cluster the countries. For clustering we
 ```
 we get
 
-![Ward clustering](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018JacWard.png)
+![Ward clustering Jaccard](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018JacWard.png)
 
 Another option is to read `Jaccard2018.net` in Pajek, compute corrected Euclidean distance for its nodes and make a clustering.
 
@@ -55,11 +55,27 @@ Instead of Jaccard normalization we could use some other normalization - for exa
 > t <- hclust(as.dist(1-M),method="ward.D")
 > plot(t,hang=-1,cex=1,main="USSR 2018 min / Ward")
 ```
-![Ward clustering](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018minWard.png)
+![Ward clustering Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018minWard.png)
 
 ## Corrected Euclidean distance
 
-We can
+We can also compare countries using rows of Jaccard matrix as their description and measure their dissimilarity using corrected Euclidean distance.
+
+```
+> CorEu <- function(W,p=1){
++    D <- W
++    n = nrow(D)
++    for(u in 1:n) for(v in 1:n) D[u,v] <- sqrt(sum((W[u,]-W[v,])**2) -
++       (W[u,u]-W[u,v])**2 - (W[v,u]-W[v,v])**2 +
++       p*((W[u,u]-W[v,v])**2 + (W[u,v]-W[v,u])**2)) 
++    return(D)
++ }
+> Ce <- CorEu(J)
+> t <- hclust(as.dist(Ce),method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 corrEuclid / Ward")
+```
+![Ward clustering CorrEuclidean / Jaccard](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWard.png)
+
 
 ## Mail
 
