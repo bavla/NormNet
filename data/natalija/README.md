@@ -42,7 +42,7 @@ we get
 
 ![Ward clustering](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018JacWard.png)
 
-Another option is to read Jaccard2018.net in Pajek, compute corrected Euclidean distance for its nodes and make a clustering.
+Another option is to read `Jaccard2018.net` in Pajek, compute corrected Euclidean distance for its nodes and make a clustering.
 
 
 
