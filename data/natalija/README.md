@@ -40,7 +40,7 @@ Using the Jaccard similarity we can now cluster the countries. For clustering we
 ```
 we get
 
-![Years](https://github.com/bavla/SocNet/blob/master/pics/years17.png)
+![Ward clustering](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018JacWard.png)
 
 Another option is to read Jaccard2018.net in Pajek, compute corrected Euclidean distance for its nodes and make a clustering.
 
