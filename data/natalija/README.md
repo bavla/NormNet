@@ -8,6 +8,23 @@ We read in R the data from the file `UssrX2018.csv` and export it as Pajek net f
 > colnames(C) <- rownames(C)
 > S <- as.matrix(C)
 > matrix2net(S,Net="UssrX2018.net")
+> S
+           Azer Armen Belorus Estonia Georgia Kazah Kirgiz Latv Litva Moldav Russia Tadjik Turkmen Ukraina Uzbekistan
+Azer        255   148     123       4     121    13      3    3     2      7    216      1       0      47          3
+Armen       148   245     256     157     274    12     11  146   146      5    375      1       0     199         26
+Belorus     123   256     269     167     269    19      1  158   191     10    642      2       0     211         25
+Estonia       4   157     167     587     163    16     13  255   238      6    290      0       0     188         23
+Georgia     121   274     269     163     114    12      7  150   151     10    302      2       0     175         29
+Kazah        13    12      19      16      12   357     30    5    10      3    277      5       1      41         15
+Kirgiz        3    11       1      13       7    30     17    3     6      2     40      3       1      13          6
+Latv          3   146     158     255     150     5      3  242   342      4    302      0       0     289         23
+Litva         2   146     191     238     151    10      6  342  1143      5    329      0       0     328         23
+Moldav        7     5      10       6      10     3      2    4     5     37     44      2       0      11          3
+Russia      216   375     642     290     302   277     40  302   329     44  23928     21       0     867         65
+Tadjik        1     1       2       0       2     5      3    0     0      2     21     13       0       2          4
+Turkmen       0     0       0       0       0     1      1    0     0      0      0      0       1       0          1
+Ukraina      47   199     211     188     175    41     13  289   328     11    867      2       0    1649         32
+Uzbekistan    3    26      25      23      29    15      6   23    23      3     65      4       1      32         72
 ```
 
 We also compute in R the Jaccard normalization of the data. Here we have two possibilities:
@@ -22,6 +39,25 @@ Last time we used Pajek to make this transformation (delete loops, vector/weight
 > diag(P) <- 0
 > diag(P) <- rowSums(P)
 > matrix2net(P,Net="UssrX2018rsum.net")
+> T <- cbind(diag(S),diag(P))
+> colnames(T) <- c("S", "P")
+> T
+               S    P
+Azer         255  691
+Armen        245 1756
+Belorus      269 2074
+Estonia      587 1520
+Georgia      114 1665
+Kazah        357  459
+Kirgiz        17  139
+Latv         242 1680
+Litva       1143 1771
+Moldav        37  112
+Russia     23928 3770
+Tadjik        13   43
+Turkmen        1    3
+Ukraina     1649 2403
+Uzbekistan    72  278
 ```
 The corrected network is saved as Pajek file `UssrX2018rsum.net`.
 
