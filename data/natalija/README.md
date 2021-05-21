@@ -11,20 +11,40 @@ We read in R the data from the file `UssrX2018.csv` and export it as Pajek net f
 ```
 
 We also compute in R the Jaccard normalization of the data. Here we have two possibilities:
-* to consider the original diagonal (loop) weights - they count all collaborations (also internal). The diagonal weight for Russia is very large and most collaborations are inside Russia.
+* to consider the original diagonal (loop) weights - they count all collaborations (also internal). The diagonal weight for Russia (diag = 23928; rSum = 3770) is very large and most collaborations are inside Russia.
 * to replace the diagonal weight with the row-sum of outdiagonal weights - it measures the collaboration with others. 
 We selected the second option.
 
-Last time we used Pajek to make this transformation (delete loops, vector/weighted outdegree, set diagonal). Here is done in R:
+Last time we used Pajek to make this transformation (delete loops, vector/weighted outdegree, set diagonal). Here it is done in R:
 
 ```
-> Z <- net2matrix("UssrX2018S.net")
-> J <- Z
-> n = nrow(Z)
-> for(u in 1:n) for(v in u:n) J[u,v] <- Z[u,v]/(Z[u,u]+Z[v,v]-Z[u,v])
-> matrix2net(J,Net="Jaccard.net")
+> P <- S
+> diag(P) <- 0
+> diag(P) <- rowSums(P)
+> matrix2net(P,Net="UssrX2018rsum.net")
 ```
- manual *arcs -> *edges ; copied coordinates of nodes
+The corrected network is saved as Pajek file `UssrX2018rsum.net`.
+
+We compute in R also the Jaccard similarity weights J and save the network as Pajek file `Jaccard2018.net`.
+```
+> J <- P
+> n = nrow(J)
+> for(u in 1:n) for(v in 1:n) J[u,v] <- P[u,v]/(P[u,u]+P[v,v]-P[u,v])
+> matrix2net(J,Net="Jaccard2018.net")
+```
+Using the Jaccard similarity we can now cluster the countries. For clustering we have to select a dissimilarity D between countries. There are different options. The simplest one is to convert Jaccard similarity to a dissimilarity (Jaccard distance) using the transformation D = 1 - J.
+```
+> D <- as.dist(1-J)
+> t <- hclust(D,method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 / Ward")
+```
+we get
+
+![Years](https://github.com/bavla/SocNet/blob/master/pics/years17.png)
+
+Another option is to read Jaccard2018.net in Pajek, compute corrected Euclidean distance for its nodes and make a clustering.
+
+
 
 
 
