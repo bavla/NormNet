@@ -1,4 +1,4 @@
-# Natalija
+# Nataliya
 
 We read in R the data from the file `UssrX2018.csv` and export it as Pajek net file `UssrX2018.net`
 ```
