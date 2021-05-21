@@ -44,11 +44,22 @@ we get
 
 Another option is to read `Jaccard2018.net` in Pajek, compute corrected Euclidean distance for its nodes and make a clustering.
 
+## Minimum normalization
 
+Instead of Jaccard normalization we could use some other normalization - for example the geometric G[u,v] = P[u,v]/sqrt(P[u,u] * P[v,v]). Here we will look at the results for the minimum normalization M[u,v] = P[u,v]/min(P[u,u],P[v,v]). 
+```
+> M <- P
+> n = nrow(M)
+> for(u in 1:n) for(v in 1:n) M[u,v] <- P[u,v]/min(P[u,u],P[v,v])
+> matrix2net(M,Net="Min2018.net")
+> t <- hclust(as.dist(1-M),method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 min / Ward")
+```
+![Ward clustering](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018minWard.png)
 
+## Corrected Euclidean distance
 
-
-
+We can
 
 ## Mail
 
