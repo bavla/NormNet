@@ -10,10 +10,10 @@ We read in R the data from the file `UssrX2018.csv` and export it as Pajek net f
 > matrix2net(S,Net="UssrX2018.net")
 ```
 
-I also computed in R the Jaccard normalization of the data. Here we have two possibilities:
+We also compute in R the Jaccard normalization of the data. Here we have two possibilities:
 * to consider the original diagonal (loop) weights - they count all collaborations (also internal). The diagonal weight for Russia is very large and most collaborations are inside Russia.
 * to replace the diagonal weight with the row-sum of outdiagonal weights - it measures the collaboration with others. 
-
+We selected the second option:
 ```
 > Z <- net2matrix("UssrX2018S.net")
 > J <- Z
