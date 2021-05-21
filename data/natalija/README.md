@@ -28,7 +28,7 @@ Uzbekistan    3    26      25      23      29    15      6   23    23      3    
 ```
 
 We also compute in R the Jaccard normalization of the data. Here we have two possibilities:
-* to consider the original diagonal (loop) weights - they count all collaborations (also internal). The diagonal weight for Russia (diag = 23928; rSum = 3770) is very large and most collaborations are inside Russia.
+* to consider the original diagonal (loop) weights - it seems that they count all internal collaborations (the diagonal entry in t(PC) * PC counts all collaborations). The diagonal weight for Russia (diag = 23928; rSum = 3770) is very large and most collaborations are inside Russia.
 * to replace the diagonal weight with the row-sum of outdiagonal weights - it measures the collaboration with others. 
 We selected the second option.
 
