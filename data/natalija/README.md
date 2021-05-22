@@ -63,9 +63,9 @@ The corrected network is saved as Pajek file `UssrX2018rsum.net`.
 
 We compute in R also the Jaccard similarity weights J and save the network as Pajek file `Jaccard2018.net`.
 ```
-> J <- P
+> J <- P; diag(J) <- 1
 > n = nrow(J)
-> for(u in 1:n) for(v in 1:n) J[u,v] <- P[u,v]/(P[u,u]+P[v,v]-P[u,v])
+> for(u in 1:(n-1)) for(v in (u+1):n) J[v,u] <- J[u,v] <- P[u,v]/(P[u,u]+P[v,v]-P[u,v])
 > matrix2net(J,Net="Jaccard2018.net")
 ```
 Using the Jaccard similarity we can now cluster the countries. For clustering we have to select a dissimilarity D between countries. There are different options. The simplest one is to convert Jaccard similarity to a dissimilarity (Jaccard distance) using the transformation D = 1 - J.
@@ -80,13 +80,25 @@ we get
 
 Another option is to read `Jaccard2018.net` in Pajek, compute corrected Euclidean distance for its nodes and make a clustering.
 
-## Minimum normalization
+## Geometric and Minimum normalization
 
-Instead of Jaccard normalization we could use some other normalization - for example the geometric G[u,v] = P[u,v]/sqrt(P[u,u] * P[v,v]). Here we will look at the results for the minimum normalization M[u,v] = P[u,v]/min(P[u,u],P[v,v]). 
+Instead of Jaccard normalization we could use some other normalization - for example the geometric G[u,v] = P[u,v]/sqrt(P[u,u] * P[v,v]). 
 ```
-> M <- P
+> G <- P; diag(G) <- 1
+> n = nrow(J)
+> for(u in 1:(n-1)) for(v in (u+1):n) G[v,u] <- G[u,v] <- P[u,v]/sqrt(P[u,u]*P[v,v])
+> matrix2net(M,Net="Geo2018.net")
+> t <- hclust(as.dist(1-G),method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 geometric / Ward")
+```
+![Ward clustering Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018geoWard.png)
+
+
+We can also look at the results for the minimum normalization M[u,v] = P[u,v]/min(P[u,u],P[v,v]). 
+```
+> M <- P; diag(M) <- 1
 > n = nrow(M)
-> for(u in 1:n) for(v in 1:n) M[u,v] <- P[u,v]/min(P[u,u],P[v,v])
+> for(u in 1:(n-1)) for(v in (u+1):n) M[v,u] <- M[u,v] <- P[u,v]/min(P[u,u],P[v,v])
 > matrix2net(M,Net="Min2018.net")
 > t <- hclust(as.dist(1-M),method="ward.D")
 > plot(t,hang=-1,cex=1,main="USSR 2018 min / Ward")
