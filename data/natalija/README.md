@@ -112,6 +112,15 @@ We can also compare countries using rows of Jaccard matrix as their description 
 ```
 ![Ward clustering CorrEuclidean / Jaccard](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWard.png)
 
+Applying the corrected Euclidean distance to Minimum matrix M
+```
+> Cm <- CorEu(M)
+> t <- hclust(as.dist(Cm),method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 corrEuclid min / Ward")
+```
+we obtain the clustering
+![Ward clustering CorrEuclidean / Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeMinWard.png)
+
 
 ## Mail
 
