@@ -119,6 +119,7 @@ Applying the corrected Euclidean distance to Minimum matrix M
 > plot(t,hang=-1,cex=1,main="USSR 2018 corrEuclid min / Ward")
 ```
 we obtain the clustering
+
 ![Ward clustering CorrEuclidean / Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeMinWard.png)
 
 
