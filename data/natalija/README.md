@@ -158,7 +158,7 @@ Assume that we would like to have Russia at the left side of the dendrogram and 
 
 The new ordering must be compatible with a dendrogram. The parameter `check=TRUE` checks this.
 
-For drawing the corresponding blockmodel in Pajek we must, esides the ordering, also prepare the partition of units according to the clustering 
+For drawing the corresponding blockmodel in Pajek we must, besides the ordering, also prepare the partition of units according to the clustering 
 ```
 > p <- cutree(t,4)
 > p
@@ -166,16 +166,17 @@ For drawing the corresponding blockmodel in Pajek we must, esides the ordering, 
          1          1          1          2          1          3          3          2          2          3 
     Russia     Tadjik    Turkmen    Ukraina Uzbekistan 
          4          3          3          4          3 
+> vector2clu(t$order,Clu="2018.per")
+> vector2clu(p,Clu="2018.clu")
 ```
+In Pajek we read the network matrix `Jaccard2018.net`, the clustering `2018.clu`, and the permutation `2018.per`. We remove the loops from the network Network / Create New Network / Transform / Remove / Loops . Now, we can draw the blockmodel File / Network / Export as Matrix to / EPS / Using Permutation + Partition
 
+![Ward clustering CorrEuclidean / Ward / blockmodel](https://github.com/bavla/NormNet/blob/main/data/natalija/2018bm.png)
+
+### Renumbering the clusters
+
+In the case we need it
 ```
-> p <- cutree(t,4)
-> p[p==p[11]] <- -1
-> p[p==p[4]] <- -2
-> p[p==p[3]] <- -3
-> p[p==p[6]] <- -4
-> p
-
 > r <- c( 3, 2, 4, 1)
 > q <- r[p]
 > q
