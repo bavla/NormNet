@@ -134,6 +134,15 @@ we obtain the clustering
 
 ![Ward clustering CorrEuclidean / Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeMinWard.png)
 
+## Reordering the units 
+
+There are many orderings of units that can be obtained from the same hierarchical clustering - in a dendrogram we can swap (change position of) left-right subtrees. I tried to make this changes using changes in the t$merge (see http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:cluster ). There was no effect. It turned out that we have to change t$order. To do this, it is useful to number the units
+```
+> t <- hclust(as.dist(Ce),method="ward.D")
+> L <- paste(1:15,"-",substr(rownames(J),1,3),sep="")
+> plot(t,hang=-1,cex=1,main="USSR 2018 corrEuclid / Ward",labels=L)
+```
+![Ward clustering CorrEuclidean / Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWardL.png)
 
 ## Mail
 
