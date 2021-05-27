@@ -157,6 +157,8 @@ Assume that we would like to have Russia at the left side of the dendrogram and 
 ![Ward clustering CorrEuclidean / Ward reordered](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWardR.png)
 
 The new ordering must be compatible with a dendrogram. The parameter `check=TRUE` checks this.
+
+For drawing the corresponding blockmodel in Pajek we must, esides the ordering, also prepare the partition of units according to the clustering 
 ```
 > p <- cutree(t,4)
 > p
@@ -166,7 +168,19 @@ The new ordering must be compatible with a dendrogram. The parameter `check=TRUE
          4          3          3          4          3 
 ```
 
+```
+> p <- cutree(t,4)
+> p[p==p[11]] <- -1
+> p[p==p[4]] <- -2
+> p[p==p[3]] <- -3
+> p[p==p[6]] <- -4
+> p
 
+> r <- c( 3, 2, 4, 1)
+> q <- r[p]
+> q
+ [1] 3 3 3 2 3 4 4 2 2 4 1 4 4 1 4
+```
 
 ## Mail
 
