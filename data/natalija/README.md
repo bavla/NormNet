@@ -141,9 +141,19 @@ There are many orderings of units that can be obtained from the same hierarchica
 > t <- hclust(as.dist(Ce),method="ward.D")
 > L <- paste(1:15,"-",substr(rownames(J),1,3),sep="")
 > plot(t,hang=-1,cex=1,main="USSR 2018 corrEuclid / Ward",labels=L)
+> t$order
+ [1]  6 13 10 12  7 15  1  3  2  5  4  8  9 11 14
+>
 ```
 ![Ward clustering CorrEuclidean / Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWardL.png)
 
+Assume that we would like to have Russia at the left side of the dendrogram and ... We describe the ordering by the list of the corresponding unit numbers. For example
+```
+> t$order <- c(11,14,4,8,9,3,2,5,1,6,10,12,13,7,15)
+> t$order
+ [1] 11 14  4  8  9  3  2  5  1  6 10 12 13  7 15
+> plot(t,hang=-1,cex=1,main="USSR 2018 corrEuclid / Ward",check=TRUE)
+```
 ## Mail
 
 Based on Vlado code I try to create Jacard network in R (see the code below) and than I create dendrogram in Pajek with dissimillarity p=0 (Jacard.eps) and p=1 (Jacard1.eps).
