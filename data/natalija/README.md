@@ -145,7 +145,7 @@ There are many orderings of units that can be obtained from the same hierarchica
  [1]  6 13 10 12  7 15  1  3  2  5  4  8  9 11 14
 >
 ```
-![Ward clustering CorrEuclidean / Minimum](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWardL.png)
+![Ward clustering CorrEuclidean / Ward labeled](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWardL.png)
 
 Assume that we would like to have Russia at the left side of the dendrogram and ... We describe the ordering by the list of the corresponding unit numbers. For example
 ```
@@ -154,6 +154,20 @@ Assume that we would like to have Russia at the left side of the dendrogram and 
  [1] 11 14  4  8  9  3  2  5  1  6 10 12 13  7 15
 > plot(t,hang=-1,cex=1,main="USSR 2018 corrEuclid / Ward",check=TRUE)
 ```
+![Ward clustering CorrEuclidean / Ward reordered](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018CeJacWardR.png)
+
+The new ordering must be compatible with a dendrogram. The parameter `check=TRUE` checks this.
+```
+> p <- cutree(t,4)
+> p
+      Azer      Armen    Belorus    Estonia    Georgia      Kazah     Kirgiz       Latv      Litva     Moldav 
+         1          1          1          2          1          3          3          2          2          3 
+    Russia     Tadjik    Turkmen    Ukraina Uzbekistan 
+         4          3          3          4          3 
+```
+
+
+
 ## Mail
 
 Based on Vlado code I try to create Jacard network in R (see the code below) and than I create dendrogram in Pajek with dissimillarity p=0 (Jacard.eps) and p=1 (Jacard1.eps).
