@@ -158,7 +158,7 @@ Assume that we would like to have Russia at the left side of the dendrogram and 
 
 The new ordering must be compatible with a dendrogram. The parameter `check=TRUE` checks this.
 
-For drawing the corresponding blockmodel in Pajek we must, besides the ordering, also prepare the partition of units into selected number of clusters (k=4) according to the clustering 
+For drawing the corresponding blockmodel in Pajek we must, besides the ordering, also prepare the partition of units into selected number of clusters (k=4) according to the obtained hierarchical clustering 
 ```
 > p <- cutree(t,4)
 > p
