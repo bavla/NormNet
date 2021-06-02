@@ -8,7 +8,8 @@
 > wdir <- "C:/Users/batagelj/Documents/papers/2021/twoMode/data/davis"
 > setwd(wdir)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
-> D <- net2matrix("davis.net")
+> library(ExPosition)
+> D <- net2matrix("davis1.net")
 > D
 > DT <- t(D)
 > DT
@@ -18,12 +19,12 @@
 [1] 14 18
 > P <- crossprod(N)
 > P
-> matrix2net(P,Net="ladies.net")
+> matrix2net(P,Net="ladies1.net")
 > B <- N %*% t(b(N))
 > J <- 1/(1/B + 1/t(B) - 1)
 > dim(J)
 [1] 14 14
-> matrix2net(J,Net="events.net")
+> matrix2net(J,Net="events1.net")
 
 > SP <- rowSums(D)
 > SP
