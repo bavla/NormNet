@@ -7,6 +7,7 @@
 ```
 > wdir <- "C:/Users/batagelj/Documents/papers/2021/twoMode/data/davis"
 > setwd(wdir)
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 > D <- net2matrix("davis.net")
 > D
 > DT <- t(D)
