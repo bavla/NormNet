@@ -9,6 +9,7 @@
 > setwd(wdir)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 > library(ExPosition)
+> b <- function(A,cut=0){ return(matrix(as.numeric(A>cut),nrow=nrow(A),dimnames=dimnames(A))) }
 > D <- net2matrix("davis1.net")
 > D
 > DT <- t(D)
