@@ -185,3 +185,7 @@
 > plot(hc,hang=-1,cex=1,main="Southern women: women / loopless / complete")
 >
 ```
+
+https://github.com/potherca-blog/StackOverflow/blob/master/question.13808020.include-an-svg-hosted-on-github-in-markdown/readme.md
+
+https://github.community/t/embedding-a-svg/468
