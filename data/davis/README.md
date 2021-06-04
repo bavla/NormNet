@@ -1,5 +1,7 @@
 # Davis Southern Women network
 
+ Davis, A., Gardner, B. B. and  Gardner, M. R. (1941) Deep South.   Chicago: The University of Chicago Press.
+
 <img src="https://github.com/bavla/NormNet/blob/main/data/davis/DGG1.png" width="600">
 
 <img src="https://github.com/bavla/NormNet/blob/main/data/davis/DGG2.png" width="600">
