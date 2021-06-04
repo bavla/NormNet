@@ -1,8 +1,8 @@
 # Davis Southern Women network
 
-![Davis SW net 1](https://github.com/bavla/NormNet/blob/main/data/davis/DGG1.png)
+![Davis SW net 1](https://github.com/bavla/NormNet/blob/main/data/davis/DGG1.png | width=400)
 
-![Davis SW net 1](https://github.com/bavla/NormNet/blob/main/data/davis/DGG2.png)
+![Davis SW net 1](https://github.com/bavla/NormNet/blob/main/data/davis/DGG2.png | width=400)
 
 ```
 > wdir <- "C:/Users/batagelj/Documents/papers/2021/twoMode/data/davis"
