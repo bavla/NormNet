@@ -172,5 +172,14 @@
 > vector2clu(pPE,Clu="DavisReg.clu")
 > 
 
-
+> disPc <- as.dist(1/Pc,diag=FALSE,upper=FALSE)
+> Qc <- as.vector(Pc)
+> 1/min(Qc[Qc>0])
+[1] 182
+> disPc[disPc>200] <-200
+> hc <-hclust(disPc,method="complete")
+> plot(hc,hang=-1,cex=1,main="Southern women: women / fractional / complete")
+> hc$order <- c(2,1,3,4,6,5,7,9,8,16,17,18,10,15,11,12,13,14)
+> plot(hc,hang=-1,cex=1,main="Southern women: women / loopless / complete")
+>
 ```
