@@ -186,6 +186,23 @@
 >
 ```
 
+Standard projection
+```
+> wdir <- "C:/Users/batagelj/Documents/papers/2021/twoMode/data/davis"
+> setwd(wdir)
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> library(ExPosition)
+> b <- function(A,cut=0){ return(matrix(as.numeric(A>cut),nrow=nrow(A),dimnames=dimnames(A))) }
+> D <- net2matrix("davis1.net")
+> DT <- t(D)
+> PP <- crossprod(DT)
+> max(PP)
+[1] 8
+> dis <- as.dist(9 - PP)
+> h <-hclust(dis,method="complete")
+> plot(h,hang=-1,cex=1,main="Southern women: women / standard / complete") 
+```
+
 https://github.com/potherca-blog/StackOverflow/blob/master/question.13808020.include-an-svg-hosted-on-github-in-markdown/readme.md
 
 https://github.community/t/embedding-a-svg/468
