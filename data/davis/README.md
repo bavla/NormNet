@@ -194,8 +194,7 @@ Standard projection
 > library(ExPosition)
 > b <- function(A,cut=0){ return(matrix(as.numeric(A>cut),nrow=nrow(A),dimnames=dimnames(A))) }
 > D <- net2matrix("davis1.net")
-> DT <- t(D)
-> PP <- crossprod(DT)
+> PP <- crossprod(t(D))
 > max(PP)
 [1] 8
 > dis <- as.dist(9 - PP)
