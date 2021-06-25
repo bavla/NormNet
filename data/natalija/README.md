@@ -202,7 +202,9 @@ In the case we need it
 > plot(t,hang=-1,cex=1,main="USSR 2018 / output / corrEuclid / Ward")
 > matrix2net(P,Net="Output2018.net")
 ```
+![Ward clustering CorrEuclidean / Output](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018OutWard.png)
 
+![Matrix / Output](https://github.com/bavla/NormNet/blob/main/data/natalija/2018outMat.png)
 
 ## Mail
 
