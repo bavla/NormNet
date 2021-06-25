@@ -183,6 +183,27 @@ In the case we need it
  [1] 3 3 3 2 3 4 4 2 2 4 1 4 4 1 4
 ```
 
+## Output normalization
+
+```
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> setwd("C:/Users/batagelj/Documents/papers/2021/normNet/natalija")
+> C <- read.csv2("UssrX2018.csv",header=FALSE,nrows=15,row.names=1)
+> colnames(C) <- rownames(C)
+> S <- as.matrix(C)
+> matrix2net(S,Net="UssrX2018.net")
+> P <- S
+> diag(P) <- 0
+> D <- rowSums(P)
+> n <- nrow(P)
+> for(i in 1:n) P[i,] <- P[i,]/D[i]
+> Ce <- CorEu(P)
+> t <- hclust(as.dist(Ce),method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 / output / corrEuclid / Ward")
+> matrix2net(P,Net="Output2018.net")
+```
+
+
 ## Mail
 
 Based on Vlado code I try to create Jacard network in R (see the code below) and than I create dendrogram in Pajek with dissimillarity p=0 (Jacard.eps) and p=1 (Jacard1.eps).
