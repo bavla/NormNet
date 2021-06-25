@@ -201,6 +201,9 @@ In the case we need it
 > t <- hclust(as.dist(Ce),method="ward.D")
 > plot(t,hang=-1,cex=1,main="USSR 2018 / output / corrEuclid / Ward")
 > matrix2net(P,Net="Output2018.net")
+> p <- cutree(t,4)
+> vector2clu(t$order,Clu="2018out.per")
+> vector2clu(p,Clu="2018out.clu")
 ```
 ![Ward clustering CorrEuclidean / Output](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018OutWard.png)
 
