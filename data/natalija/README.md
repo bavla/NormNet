@@ -258,6 +258,16 @@ Black (grey) cell - value is larger than expected
 
 Red cell - value is smaller than expected
 
+To consider also the graph structure (existing links) we set weights b to links of the original network in Pajek
+```
+select Deviat2018 as First network
+select UssrX2018 as Second network
+Networks/Intersection of MRN/First
+File/Network/Export as Matrix/EPS/Using Permutation + Partition
+```
+
+![Matrix / Deviations on network](https://github.com/bavla/NormNet/blob/main/data/natalija/2018devMatG.png)
+
 ## Mail
 
 Based on Vlado code I try to create Jacard network in R (see the code below) and than I create dendrogram in Pajek with dissimillarity p=0 (Jacard.eps) and p=1 (Jacard1.eps).
