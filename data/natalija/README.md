@@ -254,6 +254,9 @@ Note: if the network is undirected wid(v) = wod(v).
 
 ![Matrix / Deviations](https://github.com/bavla/NormNet/blob/main/data/natalija/2018devMat.png)
 
+Black (grey) cell - value is larger than expected
+
+Red cell - value is smaller than expected
 
 ## Mail
 
