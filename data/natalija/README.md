@@ -270,7 +270,7 @@ File/Network/Export as Matrix/EPS/Using Permutation + Partition
 
 ### Logarithmic deviations
 
-A simpler transformation that makes factor a "symmetric" is  b = log(a)
+A simpler transformation that makes factor a "symmetric" is  b = log(a). (1, inf) -> (0, inf); (0,1) -> (-inf, 0)
 ```
 > Z <- log(Q)
 > Z[Z == -Inf] <- 0
