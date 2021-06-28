@@ -209,6 +209,52 @@ In the case we need it
 
 ![Matrix / Output](https://github.com/bavla/NormNet/blob/main/data/natalija/2018outMat.png)
 
+## Deviations
+
+Let wod(u) be the row sum of weights in the row  u ,  wid(v)  the sum of weights in the column  v , and  T  the total sum of weights in the network. Then
+wod(u)/T is the proportion of activity of node  u . The expected weight C[u,v] between  u and v is equal to
+
+C[u,v] = wod(u)/T * wid(v) 
+
+The measured weight w[u,v] may deviate from the expected value  w[u,v] = a[u,v] * C[u,v] or
+
+a[u,v] = w[u,v]*T / (wod(u)*wid(v))
+
+If a[u,v] > 1 the measured weight is larger than expected, ...
+
+The quantity a is not 'symmetric'. We replace it with b defined as follows b = 1 - 1/a for a >= 1, and b = a - 1 for a < 1. The quantity  b  is defined on the interval [-1,1] and is positive for a > 1 and negative for a < 1. We will use b for clustering.
+
+Note: if the network is undirected wid(v) = wod(v).
+
+```
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> setwd("C:/Users/batagelj/Documents/papers/2021/normNet/natalija")
+> C <- read.csv2("UssrX2018.csv",header=FALSE,nrows=15,row.names=1)
+> colnames(C) <- rownames(C)
+> S <- as.matrix(C)
+> P <- S; diag(P) <- 0
+> D <- rowSums(P)
+> n <- nrow(P)
+> T <- sum(D)
+> Q <- P
+> for(u in 1:(n-1)) for(v in (u+1):n) {
++    Q[u,v] <- Q[v,u] <- a <- P[u,v]*T/D[u]/D[v]
++    P[u,v] <- P[v,u] <- ifelse(a<1,a-1,1-1/a)
++ }
+> Ce <- CorEu(P)
+> t <- hclust(as.dist(Ce),method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 / deviation / Ward")
+> matrix2net(P,Net="Deviat2018.net")
+> p <- cutree(t,4)
+> vector2clu(t$order,Clu="2018dev.per")
+> vector2clu(p,Clu="2018dev.clu")
+```
+
+![Ward clustering CorrEuclidean / Deviations](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018devWard.png)
+
+![Matrix / Deviations](https://github.com/bavla/NormNet/blob/main/data/natalija/2018devMat.png)
+
+
 ## Mail
 
 Based on Vlado code I try to create Jacard network in R (see the code below) and than I create dendrogram in Pajek with dissimillarity p=0 (Jacard.eps) and p=1 (Jacard1.eps).
