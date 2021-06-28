@@ -268,6 +268,24 @@ File/Network/Export as Matrix/EPS/Using Permutation + Partition
 
 ![Matrix / Deviations on network](https://github.com/bavla/NormNet/blob/main/data/natalija/2018devMatG.png)
 
+### Logarithmic deviations
+
+A simpler transformation that makes factor a "symmetric" is  b = log(a)
+```
+> Z <- log(Q)
+> Z[Z == -Inf] <- 0
+> Ce <- CorEu(Z)
+> t <- hclust(as.dist(Ce),method="ward.D")
+> plot(t,hang=-1,cex=1,main="USSR 2018 / deviation-log / Ward")
+> matrix2net(P,Net="LogDev2018.net")
+> p <- cutree(t,4)
+> vector2clu(t$order,Clu="2018logdev.per")
+> vector2clu(p,Clu="2018logdev.clu")
+```
+![Ward clustering CorrEuclidean / Log Deviations](https://github.com/bavla/NormNet/blob/main/data/natalija/UssrX2018logdevWard.png)
+
+![Matrix / Log Deviations](https://github.com/bavla/NormNet/blob/main/data/natalija/2018logdevMat.png)
+
 ## Mail
 
 Based on Vlado code I try to create Jacard network in R (see the code below) and than I create dendrogram in Pajek with dissimillarity p=0 (Jacard.eps) and p=1 (Jacard1.eps).
