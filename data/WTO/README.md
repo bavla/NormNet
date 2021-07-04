@@ -60,7 +60,7 @@ The data are available at https://data.wto.org/ .   Select: Indicators -> ''bila
 ### Logarithmic deviations 
 
 
-<code>
+```
 > CS <- WT
 > rc <- rowSums(CS)
 > rs <- rowSums(CS)
@@ -111,7 +111,7 @@ BHR      3.73243718       3.4220076       2.0807951 1.2472182 0.94455363  0.9450
        CHN 
 2653891735 
 >
-</code>
+```
 
 {{notes:net:pics:wtodevlogc.png}}
 
