@@ -286,31 +286,3 @@ A simpler transformation that makes factor a "symmetric" is  b = log(a). (1, inf
 
 ![Matrix / Log Deviations](https://github.com/bavla/NormNet/blob/main/data/natalija/2018logdevMat.png)
 
-## Mail
-
-Based on Vlado code I try to create Jacard network in R (see the code below) and than I create dendrogram in Pajek with dissimillarity p=0 (Jacard.eps) and p=1 (Jacard1.eps).
-Both dendro slightly different from your example (https://github.com/bavla/NormNet/blob/main/data/natalija/dendroJeu.pdf). In my case Kazakhstan and Azerbaijan are together, in your — are’t. 
-Could you please look on my network? What have I done incorrect? 
- 
-I have also prepared nets for another years, but I concern about it due to divergence with your dendroJeu for 2018.
-
-```
-source("S:/natalija/Pajek.R")
-setwd("S:/natalija")
-C <- read.csv2("UssrX2018.csv",header=FALSE,nrows=15,row.names=1)
-colnames(C) <- rownames(C)
-S <- as.matrix(C)
-matrix2net(S,Net="UssrX2018.net")
-# replaced in Pajek diagonals with out-diagonal sums
-#Z <- net2matrix("UssrX2018S.net")
-Z <- C
-n = nrow(Z)
-for (k in 1:n) {
-  Z[n,n] <- 0
-  Z[n,n] <- sum(Z[n,])
-}  
-J <- Z
-n = nrow(Z)
-for(u in 1:n) for(v in u:n) J[u,v] <- Z[u,v]/(Z[u,u]+Z[v,v]-Z[u,v])
-matrix2net(J,Net="Jaccard2018.net")
-```
