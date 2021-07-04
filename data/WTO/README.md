@@ -248,8 +248,8 @@ Warning message: In log(Q) : NaNs produced
 > vector2clu(pS,Clu="WTOexplogdevS.clu") 
 ```
 
-![Export / Log Deviations / Countries](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
+![Export / Log Deviations / Countries](https://github.com/bavla/NormNet/blob/main/data/WTO/WTO_2015expC.pdf)
 
-![Export / Log Deviations / Sectors](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
+![Export / Log Deviations / Sectors](https://github.com/bavla/NormNet/blob/main/data/WTO/WTO_2015expS.pdf)
 
-![Export / Log Deviations / Matrix](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
+![Export / Log Deviations / Matrix](https://github.com/bavla/NormNet/blob/main/data/WTO/WTO_2015expMat.pdf)
