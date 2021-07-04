@@ -120,6 +120,7 @@ BHR      3.73243718       3.4220076       2.0807951 1.2472182 0.94455363  0.9450
 
 In Pajek we read the network and both permutations. We fuse the permutations and display the network as a matrix.
 
+![Matrix / Log Deviations / Matrix](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
 {{notes:net:pics:wtodevmat.pdf}}
 
 ## Example: WTO annual marchandise export by product group (Million US dollar) 
