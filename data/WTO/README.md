@@ -121,3 +121,127 @@ In Pajek we read the network and both permutations. We fuse the permutations and
 
 {{notes:net:pics:wtodevmat.pdf}}
 
+## Example: WTO annual marchandise export by product group (Million US dollar) 
+
+The data are available at https://data.wto.org/ .   Select: Indicators -> ''International trade statistics'',  Reporting economies -> ''all'', Product / Sectors - Tariffs -> ''all'', Partner economies -> ''World'', Years -> 2015. Download the data as a CSV file (ZIPed).
+
+
+```
+> wdir <- "D:/vlado/docs/papers/2021/sunbelt/weighted/exp"
+> setwd(wdir)
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> b <- function(A,cut=0){ return(matrix(as.numeric(A>cut),nrow=nrow(A),dimnames=dimnames(A))) }
+> T <- read.csv("WtoData_2015exp.csv")
+> dim(T)
+[1] 79348    24
+> str(T)
+'data.frame':   79348 obs. of  24 variables:
+ $ Indicator.Category                : Factor w/ 3 levels "Merchandise trade - indices and prices",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ Indicator.Code                    : Factor w/ 38 levels "ITS_CS_AM6","ITS_CS_AX6",..: 11 11 11 11 11 11 11 11 11 11 ...
+ $ Indicator                         : Factor w/ 38 levels "Commercial services exports by main sector ...",..: 27 27 27 27 27 27 27 27 27 27 ...
+ $ Reporting.Economy.Code            : Factor w/ 262 levels "000","004","008",..: 1 2 3 4 5 7 8 9 10 11 ...
+ $ Reporting.Economy.ISO3A.Code      : Factor w/ 216 levels "","ABW","AFG",..: 1 3 6 59 11 4 12 15 9 13 ...
+ $ Reporting.Economy                 : Factor w/ 262 levels "Afghanistan",..: 257 1 5 6 7 10 12 22 13 19 ...
+ $ Partner.Economy.Code              : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ Partner.Economy.ISO3A.Code        : logi  NA NA NA NA NA NA ...
+ $ Partner.Economy                   : Factor w/ 1 level "World": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Product.Sector.Classification.Code: Factor w/ 2 levels "BOP6","SITC3": 2 2 2 2 2 2 2 2 2 2 ...
+ $ Product.Sector.Classification     : Factor w/ 2 levels "Merchandise - SITC Revision 3 (aggregates)",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ Product.Sector.Code               : Factor w/ 187 levels "AG","AGFO","GS",..: 187 187 187 187 187 187 187 187 187 187 ...
+ $ Product.Sector                    : Factor w/ 180 levels "Accommodation services",..: 170 170 170 170 170 170 170 170 170 170 ...
+ $ Period.Code                       : Factor w/ 17 levels "A","M01","M02",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ Period                            : Factor w/ 17 levels "Annual","April",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ Frequency.Code                    : Factor w/ 3 levels "A","M","Q": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Frequency                         : Factor w/ 3 levels "Annual","Monthly",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ Unit.Code                         : Factor w/ 8 levels "APC","ID0501",..: 5 5 5 5 5 5 5 5 5 5 ...
+ $ Unit                              : Factor w/ 8 levels "% change over previous month",..: 8 8 8 8 8 8 8 8 8 8 ...
+ $ Year                              : int  2015 2015 2015 2015 2015 2015 2015 2015 2015 2015 ...
+ $ Value.Flag.Code                   : Factor w/ 2 levels "","E": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Value.Flag                        : Factor w/ 2 levels "","Estimate": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Text.Value                        : logi  NA NA NA NA NA NA ...
+ $ Value                             : num  87.6 99.9 82.4 88.3 110.5 ...
+> select <- c("Reporting.Economy.ISO3A.Code","Reporting.Economy","Product.Sector.Code","Product.Sector","Value")
+> D <- T[,select]
+> dim(D)
+[1] 79348     5
+> N <- D[,c("Reporting.Economy.ISO3A.Code","Product.Sector","Value")]
+> colnames(N) <- c("country","sector","value")
+> nr <- length(levels(N$country)); nc<- length(levels(N$sector))
+> nr
+[1] 216
+> nc
+[1] 180
+> B <- matrix(data=0,nrow=nr,ncol=nc,dimnames=list(levels(N$country),levels(N$sector)))
+> for(i in 1:nrow(N)) B[as.integer(N$country[i]),as.integer(N$sector[i])] <- N$value[i]
+> names15 <- substr(levels(N$sector),1,15)
+> names <- levels(N$sector)
+> names15
+  [1] "Accommodation s" "Accounting, aud" "Acquisition of " "Advertising ser" "Advertising, ma"
+  [6] "Agricultural pr" "Air transport"   "Architectural s" "Architectural, " "Artistic relate"
+ [11] "Audio-visual se" "Audiovisual and" "Audiovisual pro" "Automotive prod" "Auxiliary insur"
+...
+[171] "Tourism-related" "Trade-related s" "Trademarks"      "Transport"       "Transport equip"
+[176] "Travel"          "Underwriting an" "Waste treatment" "Waste treatment" "Work undertaken"
+> C <- colSums(B)
+> sum(C>0)
+[1] 180
+> names[60:64]
+[1] "Goods for processing abroad - Goods sent , Goods r" "Goods for processing in reporting economy – Goods "
+[3] "Gross freight insurance claims receivable (credits" "Gross freight insurance premiums receivable (credi"
+[5] "Gross life insurance claims receivable (credits) a"
+> names15[60] <- "Goods 4 abroad"
+> names15[61] <- "Goods 4 inside"
+> names15[62] <- "GFI claims"
+> names15[63] <- "GFI premiums"
+> names15[64] <- "GLI claims"
+> names15[65] <- "GLI premiums"
+> names15[66] <- "GODI claims"
+> names15[67] <- "GODI premiums"
+> names15[80] <- "LRD audio-vis"
+> names15[81] <- "LRD computer"
+> names15[82] <- "LRD other"
+> names[105:107]
+[1] "Of which: payable by border, seasonal, and other s" "Of which: Payable by border, seasonal, and other s"
+> names15[111] <- "Other -postal"
+> names15[120] <- "Other BS"
+> names15[121] <- "Other BS n.i.e."
+> names15[123] <- "Other CS"
+> names15[124] <- "Other CS -CC"
+> names15[128] <- "Other PS"
+> names15[129] <- "Other PCRS"
+> names15[160] <- "Serv agricultur"
+> names15[161] <- "Serv mining"
+> names15[166] <- "Tele equipment"
+> names15[167] <- "Tele services"
+> names15[168] <- "Tele computer"
+> names15[179] <- "Waste agricult"
+> colnames(B) <- names15
+> dim(B)
+[1] 216 180
+> bimatrix2net(B,Net="WTO_2015exp.net")
+```
+
+```
+> CS <- B
+> rs <- rowSums(CS)
+> cs <- colSums(CS)
+> Q <- CS
+> T <- sum(CS)
+> for(u in 1:nrow(CS)) for(v in 1:ncol(CS)) Q[u,v] <- a <- CS[u,v]*T/rs[u]/cs[v] 
+> Z <- log(Q)
+Warning message: In log(Q) : NaNs produced
+> Z[Z == -Inf] <- 0
+> Z[is.nan(Z)] <- 0
+> t <- hclust(dist(Z),method="ward.D")
+> plot(t,hang=-1,cex=0.3,main="WTO countries export / log-deviation / Ward")
+> f <- hclust(dist(t(Z)),method="ward.D")
+> plot(f,hang=-1,cex=0.3,main="WTO sectors export / log-deviation / Ward")
+> 
+> bimatrix2net(t(Z),Net="WTOexplogdev.net")
+> pC <- cutree(t,4)
+> vector2clu(t$order,Clu="WTOexplogdevC.per")
+> vector2clu(pC,Clu="WTOexplogdevC.clu")
+> pS <- cutree(f,4)
+> vector2clu(f$order,Clu="WTOexplogdevS.per")
+> vector2clu(pS,Clu="WTOexplogdevS.clu") 
+```
