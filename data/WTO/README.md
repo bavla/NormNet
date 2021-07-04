@@ -113,9 +113,9 @@ BHR      3.73243718       3.4220076       2.0807951 1.2472182 0.94455363  0.9450
 >
 ```
 
-![Matrix / Log Deviations / Countries](https://github.com/bavla/NormNet/blob/main/data/WTO/wtodevlogc.png)
+![Matrix / Log Deviations / Countries](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevlogC.png)
 
-![Matrix / Log Deviations / Sectors](https://github.com/bavla/NormNet/blob/main/data/WTO/wtodevlogs.png)
+![Matrix / Log Deviations / Sectors](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevlogS.png)
 
 
 In Pajek we read the network and both permutations. We fuse the permutations and display the network as a matrix.
