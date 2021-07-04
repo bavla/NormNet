@@ -113,15 +113,15 @@ BHR      3.73243718       3.4220076       2.0807951 1.2472182 0.94455363  0.9450
 >
 ```
 
-![Matrix / Log Deviations / Countries](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevlogC.png)
+![WTO / Log Deviations / Countries](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevlogC.png)
 
-![Matrix / Log Deviations / Sectors](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevlogS.png)
+![WTO / Log Deviations / Sectors](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevlogS.png)
 
 
 In Pajek we read the network and both permutations. We fuse the permutations and display the network as a matrix.
 
-![Matrix / Log Deviations / Matrix](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
-{{notes:net:pics:wtodevmat.pdf}}
+![WTO / Log Deviations / Matrix](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
+
 
 ## Example: WTO annual marchandise export by product group (Million US dollar) 
 
@@ -247,3 +247,9 @@ Warning message: In log(Q) : NaNs produced
 > vector2clu(f$order,Clu="WTOexplogdevS.per")
 > vector2clu(pS,Clu="WTOexplogdevS.clu") 
 ```
+
+![Export / Log Deviations / Countries](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
+
+![Export / Log Deviations / Sectors](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
+
+![Export / Log Deviations / Matrix](https://github.com/bavla/NormNet/blob/main/data/WTO/WTOdevMat.pdf)
