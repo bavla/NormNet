@@ -43,7 +43,7 @@ Also, the logarithmic transformation was already proposed by Vollrath (1991)
 * https://link.springer.com/article/10.1007%2FBF02707986
 * https://www.researchgate.net/publication/314570988_Net_Comparative_Advantage_Index_Overcoming_the_Drawbacks_of_the_Existing_Indices
 
-When applying the approach to one-mode network it is important to use a corrected dissimilarity measure - for example corected Euclidean.
+When applying the approach to one-mode network it is important to use a corrected dissimilarity measure - for example corrected Euclidean.
 
 Display network matrices reordered according to the corrsponding dendrogram for all six years.
 ```
