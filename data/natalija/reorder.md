@@ -40,12 +40,42 @@
 ```
 ![After flip ordering](https://github.com/bavla/NormNet/blob/main/data/natalija/logdev2.png)
 
-```
+## Logarithmic deviations
 
 ```
-
+> i <- 1
+> t$merge <- flip(6,flip(8,flip(7,flip(12,flip(13,flip(14,t$merge))))))
+> t$merge <- flip(1,flip(4,flip(10,flip(9,flip(5,t$merge)))))
+> i <- 2
+> t$merge <- flip(7,flip(8,flip(12,flip(14,t$merge))))
+> i <- 3
+> t$merge <- flip(9,flip(10,flip(12,flip(2,flip(11,flip(14,t$merge))))))
+> i <- 4
+> t$merge <- flip(4,flip(6,flip(2,flip(8,t$merge))))
+> t$merge <- flip(1,flip(6,flip(2,flip(10,flip(11,flip(13,t$merge))))))
+> i <- 5
+> t$merge <- flip(7,flip(9,t$merge))
+> t$merge <- flip(6,flip(10,flip(2,flip(8,t$merge))))
+> i <- 6
+> t$merge <- flip(12,flip(8,flip(10,t$merge)))
+> t$merge <- flip(5,flip(6,flip(12,flip(13,t$merge))))
 ```
 
+## Stochastic normalizatio
+
+```
+> i <- 1
+> t$merge <- flip(8,flip(1,flip(11,flip(3,flip(5,flip(14,t$merge))))))
+> i <- 2
+> t$merge <- flip(8,flip(11,flip(7,flip(12,t$merge))))
+> i <- 3
+> t$merge <- flip(1,flip(6,flip(8,flip(4,flip(12,t$merge)))))
+> i <- 4
+> t$merge <- flip(12,t$merge)
+> i <- 5
+> t$merge <- flip(6,flip(3,flip(8,flip(11,flip(14,t$merge)))))
+> i <- 6
+> t$merge <- flip(11,flip(6,flip(13,t$merge)))
 ```
 
 ```
