@@ -33,11 +33,12 @@
 [13,]   11   12
 [14,]    6   13
 ```
-
+![Initial ordering](https://github.com/bavla/NormNet/blob/main/data/natalija/logdev1.png)
 ```
 > flip <- function(k,T) {t <- T[k,1]; T[k,1] <- T[k,2]; T[k,2] <- t; return(T)}
 > s <- t; t$merge <- flip(13,t$merge); hm()
 ```
+![After flip ordering](https://github.com/bavla/NormNet/blob/main/data/natalija/logdev2.png)
 
 ```
 
