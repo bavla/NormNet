@@ -53,9 +53,11 @@ Display network matrices reordered according to the corrsponding dendrogram for 
 ```
 I used the log2 transformation - easy interpretation. 
 
-I tried to save the produced pictures using `pdf / dev.off` but the results were not as expected - problems with the sizes of text, etc. So, I decided to stop after the display of each picture, manually save it, and continue to the next. Finally I combined the obtained pictures into a single picture using Inkscape.
+I tried to save the produced pictures using `pdf / dev.off` but the results were not as expected - problems with the sizes of text, etc. So, I decided to stop after the display of each picture, manually save it, and continue to the next. Finally I combined the obtained pictures into a single picture using `Inkscape`. See
 
-I also tried to combine all six pictures on the same page using R ( par(mfrow=c(2,3)) and layout(matrix(c(1,2,3,4,5,6), 2, 3, byrow = TRUE)) ). It does not work because the procedure heatmap.2 is based in the library gplots. See
+https://github.com/bavla/NormNet/blob/main/data/natalija/logdev.pdf
+
+I also tried to combine all six pictures on the same page using R ( `par(mfrow=c(2,3))` and `layout(matrix(c(1,2,3,4,5,6),2,3,byrow=TRUE))` ). It does not work because the procedure heatmap.2 is based in the library `gplots`. See
 
 https://stackoverflow.com/questions/13081310/combining-multiple-complex-plots-as-panels-in-a-single-figure
 
