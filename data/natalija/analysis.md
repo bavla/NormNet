@@ -1,7 +1,11 @@
 # Analysis
 
+## Read networks, relabel
+
+First, we read all 6 network matrices into a list SL. For easier description of manual reorderings we change the country labels by adding indices.
 ```
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> library(gplots)
 > setwd("D:/vlado/docs/papers/2021/normNet/natalija/julij/res")
 > CorEu <- function(W,p=1){
 +    D <- W; diag(D) <- 0; n = nrow(D)
@@ -27,7 +31,9 @@
 +    SL[[i]] <- as.matrix(C)
 + }
 ```
+## Logarithmic deviations
 
+Display network matrices reordered according to the corrsponding dendrogram for all six years.
 ```
 > for(i in 1:6){
 >    P <- SL[[i]]; diag(P) <- 0
@@ -45,6 +51,11 @@
 > #   dev.off()
 > }
 ```
+I used the log2 transformation - easy interpretation. 
+
+I tried to save the produced pictures using `pdf / dev.off` but the results were not as expected - problems with the sizes of text, etc. So, I decided to stop after the display of each picture, manually save it, and continue to the next. Finally I combined the obtained pictures into a single picture using Inkscape.
+
+I also tried to combine all six pictures on the same page using R ( par(mfrow=c(2,3)) and layout(matrix(c(1,2,3,4,5,6), 2, 3, byrow = TRUE)) ). It does not work because the procedure heatmap.2 is based in the library gplots. See
 
 https://stackoverflow.com/questions/13081310/combining-multiple-complex-plots-as-panels-in-a-single-figure
 
