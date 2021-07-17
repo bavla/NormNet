@@ -1,7 +1,7 @@
 # Nataliya
 
 * https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
-* https://github.com/bavla/NormNet/edit/main/data/natalija/reorder.md
+* https://github.com/bavla/NormNet/blob/main/data/natalija/reorder.md
 
 
 We read in R the data from the file `UssrX2018.csv` and export it as Pajek net file `UssrX2018.net`
