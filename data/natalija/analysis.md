@@ -61,6 +61,7 @@ I also tried to combine all six pictures on the same page using R ( `par(mfrow=c
 
 https://stackoverflow.com/questions/13081310/combining-multiple-complex-plots-as-panels-in-a-single-figure
 
+Maybe once, when I will have too much time.
 
 ```
 
