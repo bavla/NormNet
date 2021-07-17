@@ -92,3 +92,6 @@ Maybe once, when I will have too much time.
 +    ans <- readline(paste(i,". Press Enter to continue >",sep=""))
 + }
 ```
+
+https://github.com/bavla/NormNet/blob/main/data/natalija/stoch.pdf
+
