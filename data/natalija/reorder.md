@@ -61,7 +61,7 @@
 > t$merge <- flip(5,flip(6,flip(12,flip(13,t$merge))))
 ```
 
-## Stochastic normalizatio
+## Stochastic normalization
 
 ```
 > i <- 1
