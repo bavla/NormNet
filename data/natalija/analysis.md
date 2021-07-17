@@ -33,6 +33,18 @@ First, we read all 6 network matrices into a list SL. For easier description of 
 ```
 ## Logarithmic deviations
 
+I searched on Google for this measure. It turned out that it is known in economics as "Balassa index" (1965) or "Revealed comparative advantage". See
+
+* https://en.wikipedia.org/wiki/Revealed_comparative_advantage
+* https://wits.worldbank.org/wits/wits/witshelp/Content/Utilities/e1.trade_indicators.htm
+   
+Also, the logarithmic transformation was already proposed by Vollrath (1991)
+
+* https://link.springer.com/article/10.1007%2FBF02707986
+* https://www.researchgate.net/publication/314570988_Net_Comparative_Advantage_Index_Overcoming_the_Drawbacks_of_the_Existing_Indices
+
+When applying the approach to one-mode network it is important to use a corrected dissimilarity measure - for example corected Euclidean.
+
 Display network matrices reordered according to the corrsponding dendrogram for all six years.
 ```
 > for(i in 1:6){
