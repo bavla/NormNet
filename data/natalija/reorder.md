@@ -64,18 +64,36 @@
 ## Stochastic normalization
 
 ```
+> hm <- function(){
++    heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++       scale="none",revC=TRUE,trace="none",density.info="none",
++       col=colorpanel(30,low="grey95",high="black"),na.color="yellow",      
++       main=paste("USSR ",Y[i]," / stochastic / Ward",sep=""))
++ }
+> i <- 6
+> Z <- SL[[i]]; diag(Z) <- 0
+> D <- rowSums(Z); n <- nrow(Z)
+> for(u in 1:n) Z[u,] <- Z[u,]/D[u]
+> X <- Z 
+> X[Z == 0] <- NA 
+> t <- h <- hclust(as.dist(CorEu(Z)),method="ward.D")
+> hm()
+> t$merge
+
+> s <- t; t$merge <- flip(13,t$merge); hm()
+
 > i <- 1
-> t$merge <- flip(8,flip(1,flip(11,flip(3,flip(5,flip(14,t$merge))))))
+> t$merge <- flip(3,flip(5,flip(1,flip(8,flip(11,flip(14,t$merge))))))
 > i <- 2
-> t$merge <- flip(8,flip(11,flip(7,flip(12,t$merge))))
+> t$merge <- flip(6,flip(8,flip(11,flip(7,flip(12,t$merge)))))
 > i <- 3
-> t$merge <- flip(1,flip(6,flip(8,flip(4,flip(12,t$merge)))))
+> t$merge <- flip(5,flip(2,flip(4,flip(7,t$merge))))
 > i <- 4
 > t$merge <- flip(12,t$merge)
 > i <- 5
-> t$merge <- flip(6,flip(3,flip(8,flip(11,flip(14,t$merge)))))
+> t$merge <- flip(2,flip(5,flip(6,flip(11,flip(14,flip(8,t$merge))))))
 > i <- 6
-> t$merge <- flip(11,flip(6,flip(13,t$merge)))
+> t$merge <- flip(6,flip(11,flip(13,t$merge)))
 ```
 
 ```
