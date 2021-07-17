@@ -59,7 +59,7 @@ Display network matrices reordered according to the corrsponding dendrogram for 
 +       scale="none",revC=TRUE,col = bluered(100),na.color="yellow",
 +       trace = "none", density.info = "none",
 +       main=paste("USSR ",Y[i]," / log deviation / Ward",sep=""))
->    ans <- readline("Press Enter to continue >")
+>    ans <- readline(paste(i,". Press Enter to continue >",sep=""))
 > #   dev.off()
 > }
 ```
@@ -75,6 +75,20 @@ https://stackoverflow.com/questions/13081310/combining-multiple-complex-plots-as
 
 Maybe once, when I will have too much time.
 
-```
+## Stochastic (Markov, Output) normalization
 
+```
+> for(i in 1:6){
++    Z <- P <- SL[[i]]; diag(Z) <- 0
++    D <- rowSums(Z); n <- nrow(Z)
++    for(u in 1:n) Z[u,] <- Z[u,]/D[u]
++    X <- Z 
++    X[Z == 0] <- NA 
++    t <- hclust(as.dist(CorEu(Z)),method="ward.D")
++    heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++       scale="none",revC=TRUE,trace="none",density.info="none",
++       col=colorpanel(30,low="grey95",high="black"),na.color="yellow",      
++       main=paste("USSR ",Y[i]," / stochastic / Ward",sep=""))
++    ans <- readline(paste(i,". Press Enter to continue >",sep=""))
++ }
 ```
