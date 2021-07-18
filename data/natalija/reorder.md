@@ -102,7 +102,36 @@ The variable `s` is used to recover after a wrong flip.
 > i <- 6
 > t$merge <- flip(6,flip(11,flip(13,t$merge)))
 ```
+## Jaccard
 
 ```
+> hm <- function(){
++    heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++       scale="none",revC=TRUE,trace="none",density.info="none",
++       col=colorpanel(30,low="grey95",high="black"),na.color="yellow",      
++       main=paste("USSR ",Y[i]," / Jaccard / Ward",sep=""))
++ }
 
+> i <- 6
+> P <- SL[[i]]; diag(P) <- 0; diag(P) <- rowSums(P)
+> J <- P; diag(J) <- 1; n = nrow(J)
+> for(u in 1:(n-1)) for(v in (u+1):n) J[v,u] <- J[u,v] <- P[u,v]/(P[u,u]+P[v,v]-P[u,v])
+> X <- J; X[P == 0] <- NA; diag(X) <- NA
+> t <- hclust(as.dist(CorEu(J)),method="ward.D")
+> hm()
+> t$merge
+> s <- t; t$merge <- flip(14,t$merge); hm()
+
+> i <- 1
+> t$merge <- flip(9,t$merge)
+> i <- 2
+> t$merge <- flip(9,t$merge)
+> i <- 3
+> t$merge <- flip(8,flip(9,flip(5,flip(12,t$merge))))
+> i <- 4
+> t$merge <- flip(6,flip(7,t$merge))
+> i <- 5
+> t$merge <- flip(5,flip(14,t$merge))
+> i <- 6
+> t$merge <- flip(5,flip(4,flip(7,flip(11,flip(6,flip(13,flip(12,flip(14,t$merge))))))))
 ```
