@@ -33,11 +33,17 @@
 [13,]   11   12
 [14,]    6   13
 ```
+Cluster 1 contains units 12 and 13. Cluster 3 contains unit 10 and cluster 1. ...
+
 ![Initial ordering](https://github.com/bavla/NormNet/blob/main/data/natalija/logdev1.png)
+
+The function `flip` interchanges subtrees in the cluster `k`. The left subtree becomes the right subtree, and the right subtree becomes the left subtree. Using  flips we can reorder the rows and columns of network matrix preserving the hierarchical clustering structure.
 ```
 > flip <- function(k,T) {t <- T[k,1]; T[k,1] <- T[k,2]; T[k,2] <- t; return(T)}
 > s <- t; t$merge <- flip(13,t$merge); hm()
 ```
+The variable `s` is used to recover after a wrong flip.
+
 ![After flip ordering](https://github.com/bavla/NormNet/blob/main/data/natalija/logdev2.png)
 
 ## Logarithmic deviations
