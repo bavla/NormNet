@@ -88,6 +88,7 @@
 > t$merge <- flip(6,flip(8,flip(11,flip(7,flip(12,t$merge)))))
 > i <- 3
 > t$merge <- flip(5,flip(2,flip(4,flip(7,t$merge))))
+> t$merge <- flip(8,flip(11,flip(12,t$merge)))
 > i <- 4
 > t$merge <- flip(12,t$merge)
 > i <- 5
