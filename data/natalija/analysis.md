@@ -11,7 +11,7 @@ First, we read all 6 network matrices into a list SL. For easier description of 
 +    D <- W; diag(D) <- 0; n = nrow(D)
 +    for(u in 1:(n-1)) for(v in (u+1):n) D[v,u] <- D[u,v] <- 
 +       sqrt(sum((W[u,]-W[v,])**2) -
-+       (W[u,u]-W[u,v])**2 - (W[v,u]-W[v,v])**2 +
++       (W[u,u]-W[v,u])**2 - (W[u,v]-W[v,v])**2 +
 +       p*((W[u,u]-W[v,v])**2 + (W[u,v]-W[v,u])**2)) 
 +    return(D)
 + }
