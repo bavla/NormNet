@@ -1,0 +1,44 @@
+Supreme Court  
+Mrvar, A., Doreian, P. (2009) Partitioning Signed Two-Mode Networks. 
+Journal of Mathematical Sociology 33(3):196-221.
+Case;  Alito; Breyer; Ginsburg; Kennedy; Roberts; Scalia; Souter; Stevens; Thomas
+Abortion Rights             ; p; n; n; p; p; p; n; n; p
+Anti Trust Law              ; p; p; p; z; p; p; p; p; n
+Appelate Procedures         ; p; n; n; p; p; p; n; n; p
+Bankruptcy Rules            ; n; p; p; p; n; n; p; p; n
+Campaign Finance            ; p; n; n; p; p; p; n; n; p
+Church and State            ; p; n; n; p; p; p; n; n; p
+Court Sentencing            ; p; p; p; p; p; p; n; p; p
+Death Penalty               ; p; n; n; p; p; p; n; n; p
+Death Penalty 1             ; p; n; n; p; p; p; n; n; p
+Death Penalty 2             ; p; n; n; p; p; p; n; n; p
+Death Penalty Appeal        ; n; p; p; p; p; n; p; p; n
+Disabled Students           ; p; p; p; p; p; n; p; p; n
+EPA Pollution Control       ; n; p; p; p; n; n; p; p; n
+Endengered Species          ; p; n; n; p; p; p; n; n; p
+Energy Price Fixing         ; p; n; p; p; p; p; p; n; p
+Equal Pay Rights            ; p; n; n; p; p; p; n; n; p
+False Claims Act            ; p; z; n; p; p; p; p; n; p
+Federal Employees           ; p; p; p; p; p; n; p; p; n
+First Amendment             ; p; n; n; p; p; p; n; n; p
+Grazing Rights              ; p; p; n; p; p; p; p; n; p
+Illegal Searches            ; p; p; p; p; p; p; n; p; p
+Immigration Drug Law        ; p; p; p; p; p; p; p; p; n
+Interstate Telephones       ; p; p; p; p; p; n; p; p; n
+Mental Health Death Penalty ; n; p; p; p; n; n; p; p; n
+Patent Law                  ; p; p; p; p; p; p; p; p; n
+Patents and Software        ; p; p; p; p; z; p; p; n; p
+Police Discretion           ; p; p; p; p; p; p; p; n; p
+Price Agreements            ; p; n; n; p; p; p; n; n; z
+Prisoner Health             ; p; p; p; p; p; n; p; p; n
+Punitive Damages            ; p; p; n; p; p; n; p; n; n
+School Integration          ; p; n; n; p; p; p; n; n; p
+Securities Fraud            ; p; p; p; p; p; p; p; n; p
+Sentencing                  ; p; n; n; p; p; p; n; n; p
+Sentencing 1                ; p; p; n; p; p; n; p; n; n
+Texas Death Penalty 1       ; n; p; p; p; n; n; p; p; n
+Texas Death Penalty 2       ; n; p; p; p; n; n; p; p; n
+Texas Death Penalty 3       ; n; p; p; p; n; n; p; p; n
+Trade Restraint             ; p; p; n; p; p; p; p; n; p
+UN Property Taxes           ; p; n; p; p; p; p; p; n; z
+Wrongful Arrest             ; p; n; n; p; p; p; p; p; p
