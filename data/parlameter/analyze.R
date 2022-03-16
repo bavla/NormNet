@@ -39,6 +39,7 @@
 > m <- nrow(U)
 > E <- matrix(1,nrow=m,ncol=m)
 > J <- U / (diag(diag(U)) %*% E + E %*% diag(diag(U)) - U)
+> matrix2net(J,Net="Jaccard.net")
 > disJ <- as.dist(1-J,diag=FALSE,upper=FALSE)
 > g <-hclust(disJ,method="complete")
 > plot(g,hang=-1,cex=1,main="Slovenian parliament - Jaccard / Complete")
