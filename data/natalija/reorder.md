@@ -1,5 +1,6 @@
 # Reordering matrices considering clustering
 
+July 2021
 ```
 > hm <- function(){
 +    heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
@@ -134,4 +135,95 @@ The variable `s` is used to recover after a wrong flip.
 > t$merge <- flip(5,flip(14,t$merge))
 > i <- 6
 > t$merge <- flip(5,flip(4,flip(7,flip(11,flip(6,flip(13,flip(12,flip(14,t$merge))))))))
+```
+
+# Flipping in large hierarhies
+
+April 17, 2022
+
+## transforming t$merge into sun2father tree vector
+
+T[u] is the father of node u. T[root] = 0.
+```
+> toFather <- function(tm){
++   n <- nrow(tm); T <- rep(0,2*n+1)
++   for(i in 1:n){
++     for(j in 1:2){
++       p <- tm[i,j]
++       if(p<0) T[-p] <- i+n+1 else T[n+1+p] <- i+n+1
++     }
++   }
++   return(T)
++ }
+```
+For the t$merge from our example we get
+```
+> T <- toFather(t$merge)
+> cbind(1:(2*n+1),T)
+          T
+ [1,]  1 27
+ [2,]  2 17
+ [3,]  3 21
+ [4,]  4 18
+ [5,]  5 17
+ [6,]  6 22
+ [7,]  7 22
+ [8,]  8 16
+ [9,]  9 16
+[10,] 10 19
+[11,] 11 19
+[12,] 12 23
+[13,] 13 23
+[14,] 14 20
+[15,] 15 24
+[16,] 16 18
+[17,] 17 20
+[18,] 18 28
+[19,] 19 25
+[20,] 20 21
+[21,] 21 27
+[22,] 22 24
+[23,] 23 25
+[24,] 24 26
+[25,] 25 26
+[26,] 26 29
+[27,] 27 28
+[28,] 28 29
+[29,] 29  0
+```
+## Minimum common cluster of nodes u and v
+```
+> minCl <- function(u,v,T){
++   if(min(u,v)==0) return(T[max(u,v)])
++   cat(u," ",v,":",T[u]," ",T[v],"\n")
++   if(u==v) return(u)
++   return( if(T[u]<T[v]) minCl(T[u],v,T) else minCl(u,T[v],T) ) 
++ }
+```
+For our example hierarchy we get
+```
+> minCl(8,2,T)
+8   2 : 16   17 
+16   2 : 18   17 
+16   17 : 18   20 
+18   17 : 28   20 
+18   20 : 28   21 
+18   21 : 28   27 
+18   27 : 28   28 
+18   28 : 28   29 
+28   28 : 29   29 
+[1] 28
+```
+and
+```
+> minCl(8,6,T)
+8   6 : 16   22 
+16   6 : 18   22 
+18   6 : 28   22 
+18   22 : 28   24 
+18   24 : 28   26 
+18   26 : 28   29 
+28   26 : 29   29 
+28   29 : 29   0 
+[1] 29
 ```
