@@ -263,6 +263,8 @@ Producing a heat map
 > hm()
 > dev.off()
 ```
+https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20dendReW.pdf
+
 https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20heatReW.pdf
 ```
 
