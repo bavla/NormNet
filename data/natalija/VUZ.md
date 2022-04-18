@@ -113,8 +113,15 @@ dev.off()
 
 ### Weights distribution
 ```
-
+> P <- S3
+> P[P==0] <- NA
+> T <- table(P)
+> x <- as.numeric(names(T))
+> plot(x,T,pch=16,main="Weights distribution")
+> plot(x,T,log="xy",pch=16,main="Weights distribution / log-log")
 ```
+
+
 ### Recoding
 ```
 > P <- S3
