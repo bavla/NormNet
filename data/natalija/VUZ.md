@@ -257,9 +257,15 @@ Producing a heat map
 ```
 > P <- Q
 > P[is.na(P)] <- 0
-> Tm <- reorderCl(t$merge,rowSums(P))
-> t$order <- orDendro(Tm,n-1)
-> pdf(file = "VUZ20heatReE.pdf",width=20,height=20)
+> t$merge <- reorderCl(t$merge,rowSums(P))
+> t$order <- orDendro(t$merge,n-1)
+
+> pdf(file = "VUZ20dendReW.pdf",width=18,height=10)
+> s <- t; t$order <- orDendro(t$merge,n-1)
+> plot(t,hang=-1,cex=0.5,main="VUZ recoded / corrEuclid / Ward")
+> dev.off()
+
+> pdf(file = "VUZ20heatReW.pdf",width=20,height=20)
 > hm()
 > dev.off()
 ```
