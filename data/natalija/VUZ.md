@@ -120,7 +120,9 @@ dev.off()
 > plot(x,T,pch=16,main="Weights distribution")
 > plot(x,T,log="xy",pch=16,main="Weights distribution / log-log")
 ```
+https://github.com/bavla/NormNet/blob/main/data/natalija/weights20.png
 
+https://github.com/bavla/NormNet/blob/main/data/natalija/weights20log.png
 
 ### Recoding
 ```
