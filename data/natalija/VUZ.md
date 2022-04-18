@@ -168,6 +168,65 @@ dev.off()
 +   main=paste("VUZ ",2010," / Jaccard / Ward",sep=""),key=FALSE,keysize=1)
 > dev.off()
 ```
+### Reordering
+```
+> source("./reorder.R")
+> hm <- function(){
++   heatmap.2(Q,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++     scale="none",revC=TRUE,trace="none",density.info="none",
++     col=colorpanel(4,low="grey60",high="black"),na.color="white",      
++     main=paste("VUZ ",2020," / recoded / Ward",sep=""),key=FALSE,keysize=1)
++ }
+
+
+> P <- S3
+> diag(P) <- 0
+> table(P)
+> Q <- P
+> Q[P>=50] <- 4
+> Q[(P>=10)&(P<50)] <- 3
+> Q[(P>=5)&(P<10)] <- 2
+> Q[(P>=1)&(P<5)] <- 1
+> Ce <- CorEu(Q)
+> t <- hclust(as.dist(Ce),method="ward.D")
+> plot(t,hang=-1,cex=0.5,main="VUZ recoded / corrEuclid / Ward")
+
+> Q[Q == 0] <- NA 
+> table(Q)
+> # pdf(file = "VUZ20heatR.pdf",width=20,height=20)
+> hm()
+> # dev.off()
+
+> T <- toFather(t$merge)
+> n <- nrow(t$merge)+1
+> s <- t; t$merge <- flip(minCl(89,94,T)-n,t$merge); hm()
+> s <- t; t$merge <- flip(minCl(65,100,T)-n,t$merge); hm()
+> s <- t; t$merge <- flip(minCl(77,6,T)-n,t$merge); hm()
+> s <- t; t$merge <- flip(minCl(95,15,T)-n,t$merge); hm()
+> s <- t; t$merge <- flip(minCl(43,7,T)-n,t$merge); hm()
+> s <- t; t$order <- orDendro(t$merge,n-1)
+> plot(t,hang=-1,cex=0.5,main="VUZ recoded / corrEuclid / Ward")
+> s <- t; t$merge <- flip(minCl(97,107,T)-n,t$merge); hm()
+> s <- t; t$merge <- flip(minCl(94,61,T)-n,t$merge); hm()
+
+> pdf(file = "VUZ20heatRe.pdf",width=20,height=20)
+> hm()
+> dev.off()
+
+> pdf(file = "VUZ20dendRe.pdf",width=18,height=10)
+> s <- t; t$order <- orDendro(t$merge,n-1)
+> plot(t,hang=-1,cex=0.5,main="VUZ recoded / corrEuclid / Ward")
+> dev.off()
+
+```
+
+```
+
+```
+
+```
+
+```
 
 ```
 
