@@ -169,6 +169,9 @@ dev.off()
 > dev.off()
 ```
 ### Reordering
+
+https://github.com/bavla/NormNet/blob/main/data/natalija/reorder.md#flipping-in-large-hierarhies
+
 ```
 > source("./reorder.R")
 > hm <- function(){
@@ -231,3 +234,7 @@ dev.off()
 ```
 
 ```
+# To do
+
+* Let v(C) be a property of a cluster C. For example, v(C) = average of row-sums for units from C. Reorder clusters according to v(C).
+*  
