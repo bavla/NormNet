@@ -222,7 +222,9 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/reorder.md#flipping-in-
 > dev.off()
 
 ```
+https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20dendRe.pdf
 
+https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20heatRe.pdf
 ```
 
 ```
