@@ -272,6 +272,9 @@ Producing a heat map
 https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20dendReW.pdf
 
 https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20heatReW.pdf
+
+https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20bm.pdf
+
 ```
 
 ```
