@@ -234,18 +234,40 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/reorder.md#flipping-in-
 https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20dendRe.pdf
 
 https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20heatRe.pdf
-```
 
-```
+## Weighted reordering of the hierarchy
 
+Let v(C) be a property of a cluster C. For example, v(C) = average of row-sums for units from C. Reorder clusters according to v(C).
 ```
-
+> reorderCl <- function(tm,w){
++   n <- nrow(tm); N <- rep(1,2*n+1)
++   V <- rep(0,2*n+1); V[1:(n+1)] <- w
++   for(i in 1:n){
++     u <- tm[i,1]; v <- tm[i,2]
++     if(u<0) iu <- -u else iu <- u+n+1
++     if(v<0) iv <- -v else iv <- v+n+1
++     V[i+n+1] <- V[iu]+V[iv]; N[i+n+1] <- N[iu]+N[iv]
++     if(V[iu]/N[iu]<V[iv]/N[iv]) 
++       {t <- tm[i,1]; tm[i,1] <- tm[i,2]; tm[i,2] <- t}
++   }
++   return(tm)
++ }
 ```
-
+Producing a heat map
+```
+> P <- Q
+> P[is.na(P)] <- 0
+> Tm <- reorderCl(t$merge,rowSums(P))
+> t$order <- orDendro(Tm,n-1)
+> pdf(file = "VUZ20heatReE.pdf",width=20,height=20)
+> hm()
+> dev.off()
+```
+https://github.com/bavla/NormNet/blob/main/data/natalija/VUZ20heatReW.pdf
 ```
 
 ```
 # To do
 
-* Let v(C) be a property of a cluster C. For example, v(C) = average of row-sums for units from C. Reorder clusters according to v(C).
+* Let v(C) be a property of a cluster C. For example, v(C) = average of row-sums for units from C. Reorder clusters according to v(C). (Done April 18, 2022)
 *  
