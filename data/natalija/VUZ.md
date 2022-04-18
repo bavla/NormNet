@@ -10,7 +10,6 @@
 > setwd("C:/Users/vlado/docs/papers/2022/natalija/data")
 > C <- read.csv2("Vuz_2010.csv",header=TRUE,row.names=1)
 
-
 > names <- c(
 +  "Moscow_I_PhysTech",        "NRNU MEPhI",               "Novosibirsk_SU",          
 +  "Peter_the_Great_PU",       "Tomsk_SU",                 "Altai_SU",                
@@ -71,17 +70,103 @@
 ```
 > load("VUZ.RData")
 ```
+## Draw network matrices / Jaccard
 
+```
+> P <- S3
+> diag(P) <- 0
+> diag(P) <- rowSums(P)
+> J <- P; diag(J) <- 1
+> n = nrow(J)
+> for(u in 1:(n-1)) for(v in (u+1):n) J[v,u] <- J[u,v] <- P[u,v]/(P[u,u]+P[v,v]-P[u,v])
+> # matrix2net(J,Net="Jaccard2018.net")
+> Ce <- CorEu(J)
+> t <- hclust(as.dist(Ce),method="ward.D")
+> plot(t,hang=-1,cex=0.5,main="VUZ Jaccard / corrEuclid / Ward")
+
+X <- S3 
+diag(X) <- 0
+X[X == 0] <- NA 
+t <- hclust(as.dist(Ce),method="ward.D")
+pdf(file = "VUZtest.pdf",width=16,height=18)
+heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
+  scale="none",revC=TRUE,trace="none",density.info="none",
+  col=colorpanel(30,low="grey95",high="black"),na.color="yellow",      
+  main=paste("VUZ ",2020," / Jaccard / Ward",sep=""),key=FALSE,keysize=1)
+dev.off()
+
+pdf(file = "VUZtest.pdf",width=18,height=18)
+heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
+  scale="none",revC=TRUE,trace="none",density.info="none",
+  col=colorpanel(30,low="grey60",high="black"),na.color="white",      
+  main=paste("VUZ ",2020," / Jaccard / Ward",sep=""),key=FALSE,keysize=1)
+dev.off()
+
+pdf(file = "VUZtest.pdf",width=20,height=20)
+heatmap.2(Q,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
+  scale="none",revC=TRUE,trace="none",density.info="none",
+  col=colorpanel(4,low="grey60",high="black"),na.color="white",      
+  main=paste("VUZ ",2020," / Jaccard / Ward",sep=""),key=FALSE,keysize=1)
+dev.off()
+```
+## Recoded matrices
+
+### Weights distribution
 ```
 
 ```
-
+### Recoding
 ```
+> P <- S3
+> diag(P) <- 0
+> table(P)
+> Q <- P
+> Q[P>=50] <- 4
+> Q[(P>=10)&(P<50)] <- 3
+> Q[(P>=5)&(P<10)] <- 2
+> Q[(P>=1)&(P<5)] <- 1
+> Q[Q == 0] <- NA 
+> table(Q)
+> pdf(file = "VUZ20heat.pdf",width=20,height=20)
+> heatmap.2(Q,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++   scale="none",revC=TRUE,trace="none",density.info="none",
++   col=colorpanel(4,low="grey60",high="black"),na.color="white",      
++   main=paste("VUZ ",2020," / Jaccard / Ward",sep=""),key=FALSE,keysize=1)
+> dev.off()
 
-```
+> P <- S2
+> diag(P) <- 0
+> table(P)
+> Q <- P
+> Q[P>=50] <- 4
+> Q[(P>=10)&(P<50)] <- 3
+> Q[(P>=5)&(P<10)] <- 2
+> Q[(P>=1)&(P<5)] <- 1
+> Q[Q == 0] <- NA 
+> table(Q)
+> pdf(file = "VUZ15heat.pdf",width=20,height=20)
+> heatmap.2(Q,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++   scale="none",revC=TRUE,trace="none",density.info="none",
++   col=colorpanel(4,low="grey60",high="black"),na.color="white",      
++   main=paste("VUZ ",2015," / Jaccard / Ward",sep=""),key=FALSE,keysize=1)
+> dev.off()
 
-```
-
+> P <- S1
+> diag(P) <- 0
+> table(P)
+> Q <- P
+> Q[P>=50] <- 4
+> Q[(P>=10)&(P<50)] <- 3
+> Q[(P>=5)&(P<10)] <- 2
+> Q[(P>=1)&(P<5)] <- 1
+> Q[Q == 0] <- NA 
+> table(Q)
+> pdf(file = "VUZ10heat.pdf",width=20,height=20)
+> heatmap.2(Q,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++   scale="none",revC=TRUE,trace="none",density.info="none",
++   col=colorpanel(4,low="grey60",high="black"),na.color="white",      
++   main=paste("VUZ ",2010," / Jaccard / Ward",sep=""),key=FALSE,keysize=1)
+> dev.off()
 ```
 
 ```
