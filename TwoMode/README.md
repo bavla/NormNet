@@ -1,3 +1,3 @@
-# Analysis of two-mode networks based on network multiplication
+# Analysis of two-mode networks 
 
-[Data](DataSets.md)
+  - [Two-mode network datasets](DataSets.md)
