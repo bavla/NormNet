@@ -18,3 +18,21 @@ PNO, pulses, nuts, and oilseed; F&V, fruit and vegetables; AGR, agriculture, for
 MIN, mining and quarrying; MAN, manufacturing; PS, power and water supplies; CON, construction;
 SER, services; FIN, finance; SPS, social and personal services; TC, transport and communications.
 
+## 
+
+25 plant species and 17 plots
+
+Plants Steneryd Reserve: [CSV](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/Plants Steneryd Reserve.csv), [Pajek MAT](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/Plants Steneryd Reserve.mat), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/Plants Steneryd Reserve.pdf)
+
+page 174 / Table 9.7 Abundance measures for 25 plant species on 17 plots in Steneryd Nature Reserve, Sweden
+
+Table 9.7 shows the abundances of the 25 most abundant plant species on 17 plots from a grazed 
+meadow in Steneryd Nature Reserve in Sweden, as measured by Persson (1981) and used for an 
+example by Digby and Kempton (1987). Each value in the table is the sum of cover values in a 
+range from 0 to 5 for nine sample quadrats, so that a value of 45 corresponds to complete cover
+by the species being considered. Note that the species are in order from the most abundant (1) 
+to the least abundant (25), and the plots are in the order given by Digby and Kempton (1987, 
+table 3.2), which corresponds to variation in certain environmental factors such as light and moisture.
+
+- Persson, S. (1981). Ecological indicator values as an aid in the interpretation of ordination diagrams. Journal of Ecology 69: 71–84.
+- Digby, P.G.N. and Kempton, R.A. (1987). Multivariate Analysis of Ecological Communities. London: Chapman and Hall.
