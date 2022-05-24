@@ -10,7 +10,7 @@ EuProtein: [CSV](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto
 
 ```
 dataF <- "https://raw.githubusercontent.com/bavla/NormNet/main/data/Manly%26Alberto/EuProtein.csv"
-P <- read.csv(dataF,sep=",",skip=5,head=TRUE)
+P <- read.csv(dataF,sep=",",skip=5,head=TRUE,row.names=1)
 ```
 
 page 198 / Table 10.4 Sources of protein and percentages employed in different industry groups for countries in Europe
