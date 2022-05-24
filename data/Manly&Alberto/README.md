@@ -22,7 +22,7 @@ SER, services; FIN, finance; SPS, social and personal services; TC, transport an
 
 25 plant species and 17 plots
 
-Plants Steneryd Reserve: [CSV](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/Plants Steneryd Reserve.csv), [Pajek MAT](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/Plants Steneryd Reserve.mat), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/Plants Steneryd Reserve.pdf)
+PlantsStenerydReserve: [CSV](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/PlantsStenerydReserve.csv), [Pajek MAT](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/PlantsStenerydReserve.mat), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/PlantsStenerydReserve.pdf)
 
 page 174 / Table 9.7 Abundance measures for 25 plant species on 17 plots in Steneryd Nature Reserve, Sweden
 
