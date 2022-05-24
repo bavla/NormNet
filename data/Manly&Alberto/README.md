@@ -1,4 +1,4 @@
-# Some datasets from Manly and Alberto 
+# Some two-mode networks from Manly and Alberto 
 
 Manly, Bryan F. J.,  Navarro Alberto, Jorge A.: Multivariate statistical methods: a primer. 4e, CRC Press, 2017. 
 
