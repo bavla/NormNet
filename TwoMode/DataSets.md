@@ -15,3 +15,4 @@
 | 10 | [Slovenian magazines and journals 1999 and 2000](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/journals.htm)  |
 | 11 | [Divorce in US](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/divorce.net)  |
 | 12 | [Supreme Court Justices votes on 26 important decisions 2000-2001](http://vlado.fmf.uni-lj.si/pub/networks/data/GBM/SupremeCourt/SupremeCourt.net)  |
+| 13 | [EuProtein / Manly & Alberto](https://github.com/bavla/NormNet/blob/main/data/Manly&Alberto/README.md#euprotein) |
