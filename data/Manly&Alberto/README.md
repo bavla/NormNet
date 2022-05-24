@@ -9,7 +9,7 @@ Manly, Bryan F. J.,  Navarro Alberto, Jorge A.: Multivariate statistical methods
 EuProtein: [CSV](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.csv), [Pajek MAT](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.mat), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.pdf)
 
 ```
-dataF <- "https://raw.githubusercontent.com/bavla/NormNet/main/data/Manly%26Alberto/PlantsStenerydReserve.csv"
+dataF <- "https://raw.githubusercontent.com/bavla/NormNet/main/data/Manly%26Alberto/EuProtein.csv"
 P <- read.csv(dataF,sep=",",skip=5,head=TRUE)
 ```
 
