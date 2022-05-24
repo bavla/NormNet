@@ -6,7 +6,7 @@ Manly, Bryan F. J.,  Navarro Alberto, Jorge A.: Multivariate statistical methods
 
 22 Eu countries and 18 industry groups
 
-EuProtein.csv, EuProtein.mat (Pajek), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.pdf)
+EuProtein: [CSV](), [Pajek MAT](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.mat), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.pdf)
 
 page 198 / Table 10.4 Sources of protein and percentages employed in different industry groups for countries in Europe
 
