@@ -8,8 +8,10 @@ Manly, Bryan F. J.,  Navarro Alberto, Jorge A.: Multivariate statistical methods
 
 EuProtein: [CSV](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.csv), [Pajek MAT](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.mat), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/EuProtein.pdf)
 
+```
 dataF <- "https://raw.githubusercontent.com/bavla/NormNet/main/data/Manly%26Alberto/PlantsStenerydReserve.csv"
-R <- read.csv(dataF,sep=",",skip=15,head=TRUE)
+P <- read.csv(dataF,sep=",",skip=5,head=TRUE)
+```
 
 page 198 / Table 10.4 Sources of protein and percentages employed in different industry groups for countries in Europe
 
@@ -27,8 +29,10 @@ SER, services; FIN, finance; SPS, social and personal services; TC, transport an
 
 PlantsStenerydReserve: [CSV](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/PlantsStenerydReserve.csv), [Pajek MAT](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/PlantsStenerydReserve.mat), [picture](https://github.com/bavla/NormNet/blob/main/data/Manly%26Alberto/PlantsStenerydReserve.pdf)
 
+```
 dataF <- "https://raw.githubusercontent.com/bavla/NormNet/main/data/Manly%26Alberto/PlantsStenerydReserve.csv"
 R <- read.csv(dataF,sep=",",skip=15,head=TRUE)
+```
 
 page 174 / Table 9.7 Abundance measures for 25 plant species on 17 plots in Steneryd Nature Reserve, Sweden
 
