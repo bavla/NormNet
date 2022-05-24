@@ -31,7 +31,7 @@ PlantsStenerydReserve: [CSV](https://github.com/bavla/NormNet/blob/main/data/Man
 
 ```
 dataF <- "https://raw.githubusercontent.com/bavla/NormNet/main/data/Manly%26Alberto/PlantsStenerydReserve.csv"
-R <- read.csv(dataF,sep=",",skip=15,head=TRUE)
+R <- read.csv(dataF,sep=",",skip=15,head=TRUE,row.names=1)
 ```
 
 page 174 / Table 9.7 Abundance measures for 25 plant species on 17 plots in Steneryd Nature Reserve, Sweden
