@@ -1,0 +1,41 @@
+Manly, Bryan F.J., Navarro Alberto, Jorge A.: Multivariate statistical methods: a primer. 4e, 
+CRC Press, 2017. page 174
+Table 9.7 Abundance measures for 25 plant species on 17 plots in Steneryd Nature Reserve, Sweden
+Table 9.7 shows the abundances of the 25 most abundant plant species on 17 plots from a grazed 
+meadow in Steneryd Nature Reserve in Sweden, as measured by Persson (1981) and used for an 
+example by Digby and Kempton (1987). Each value in the table is the sum of cover values in a 
+range from 0 to 5 for nine sample quadrats, so that a value of 45 corresponds to complete cover
+by the species being considered. Note that the species are in order from the most abundant (1) 
+to the least abundant (25), and the plots are in the order given by Digby and Kempton (1987, 
+table 3.2), which corresponds to variation in certain environmental factors such as light and 
+moisture. 
+Persson, S. (1981). Ecological indicator values as an aid in the interpretation of ordination 
+diagrams. Journal of Ecology 69: 71–84.
+Digby, P.G.N. and Kempton, R.A. (1987). Multivariate Analysis of Ecological Communities. 
+London: Chapman and Hall.
+Species,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 
+Festuca ovina,38 ,43 ,43 ,30 ,10 ,11 ,20 ,0 ,0 ,5 ,4 ,1 ,1 ,0 ,0 ,0 ,0 
+Anemone nemorosa,0 ,0 ,0 ,4 ,10 ,7 ,21 ,14 ,13 ,19 ,20 ,19 ,6 ,10 ,12 ,14 ,21 
+Stallaria holostea,0 ,0 ,0 ,0 ,0 ,6 ,8 ,21 ,39 ,31 ,7 ,12 ,0 ,16 ,11 ,6 ,9 
+Agrostis tenuis,10 ,12 ,19 ,15 ,16 ,9 ,0 ,9 ,28 ,8 ,0 ,4 ,0 ,0 ,0 ,0 ,0 
+Ranunculus ficaria,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,13 ,0 ,0 ,21 ,20 ,21 ,37 
+Mercurialis perennis,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,0 ,0 ,0 ,11 ,45 ,45 
+Poa pratenis,1 ,0 ,5 ,6 ,2 ,8 ,10 ,15 ,12 ,15 ,4 ,5 ,6 ,7 ,0 ,0 ,0 
+Rumex acetosa,0 ,7 ,0 ,10 ,9 ,9 ,3 ,9 ,8 ,9 ,2 ,5 ,5 ,1 ,7 ,0 ,0 
+Veronica chamaedrys,0 ,0 ,1 ,4 ,6 ,9 ,9 ,9 ,11 ,11 ,6 ,5 ,4 ,1 ,7 ,0 ,0 
+Dactylis glomerata,0 ,0 ,0 ,0 ,0 ,8 ,0 ,14 ,2 ,14 ,3 ,9 ,8 ,7 ,7 ,2 ,1 
+Fraxinus excelsior (juv.),0 ,0 ,0 ,0 ,0 ,8 ,0 ,0 ,6 ,5 ,4 ,7 ,9 ,8 ,8 ,7 ,6 
+Saxifraga granulata,0 ,5 ,3 ,9 ,12 ,9 ,0 ,1 ,7 ,4 ,5 ,1 ,1 ,1 ,3 ,0 ,0 
+Deschampsia flexuosa ,0 ,0 ,0 ,0 ,0 ,0 ,30 ,0 ,14 ,3 ,8 ,0 ,3 ,3 ,0 ,0 ,0 
+Luzula campestris,4 ,10 ,10 ,9 ,7 ,6 ,9 ,0 ,0 ,2 ,1 ,0 ,2 ,0 ,1 ,0 ,0 
+Plantago lanceolata,2 ,9 ,7 ,15 ,13 ,8 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 
+Festuca rubra,0 ,0 ,0 ,0 ,15 ,6 ,0 ,18 ,1 ,9 ,0 ,0 ,2 ,0 ,0 ,0 ,0 
+Hieracium pilosella,12 ,7 ,16 ,8 ,1 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 
+Geum urbanum,0 ,0 ,0 ,0 ,0 ,7 ,0 ,2 ,2 ,1 ,0 ,7 ,9 ,2 ,3 ,8 ,7 
+Lathyrus montanus,0 ,0 ,0 ,0 ,0 ,7 ,9 ,2 ,12 ,6 ,3 ,8 ,0 ,0 ,0 ,0 ,0 
+Campanula persicifolia,0 ,0 ,0 ,0 ,2 ,6 ,3 ,0 ,6 ,5 ,3 ,9 ,3 ,2 ,7 ,0 ,0 
+Viola riviniana,0 ,0 ,0 ,0 ,0 ,4 ,1 ,4 ,2 ,9 ,6 ,8 ,4 ,1 ,6 ,0 ,0 
+Hepatica nobilis,0 ,0 ,0 ,0 ,0 ,8 ,0 ,4 ,0 ,6 ,2 ,10 ,6 ,0 ,2 ,7 ,0 
+Achillea millefolium,1 ,9 ,16 ,9 ,5 ,2 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 
+Allium sp.,0 ,0 ,0 ,0 ,2 ,7 ,0 ,1 ,0 ,3 ,1 ,6 ,8 ,2 ,0 ,7 ,4 
+Trifolim repens,0 ,0 ,6 ,14 ,19 ,2 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 
