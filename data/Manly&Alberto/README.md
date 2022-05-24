@@ -6,7 +6,9 @@ Manly, Bryan F. J.,  Navarro Alberto, Jorge A.: Multivariate statistical methods
 
 22 Eu countries and 18 industry groups
 
-page 198 Table 10.4 Sources of protein and percentages employed in different industry groups for countries in Europe
+EuProtein.csv, EuProtein.mat (Pajek), EuProtein.pdf (picture)
+
+page 198 / Table 10.4 Sources of protein and percentages employed in different industry groups for countries in Europe
 
 estimates of the average protein consumption from different food sources for the inhabitants of 22 European countries from:
 Weber, A. (1973). Agrarpolitik im Spannungsfeld der Internationalen Ernährungspolitik. Kiel: Institut für Agrapolitik und Marktlehre.
