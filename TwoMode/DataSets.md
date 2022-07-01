@@ -7,7 +7,7 @@
 |  2 | [IMDb movie-actor network (2006)](http://mozart.diei.unipg.it/gdcontest/contest2005/gdevolving2005.html); [Pajek](http://vlado.fmf.uni-lj.si/pub/networks/data/GD/gd05/imdb.zip)   |  |  |  |
 |  3 | [Dutch elite (2006)](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/DutchElite.htm)   | 3810 persons  | 937 administrative bodies  | {0,1}  |
 |  4 | [Authorship in bib of Imrich W, Klavžar S. (1999) Graph products](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/Sandi/Sandi.htm)    | 674 authors  | 314 papers  | {0,1}  |
-|  5 | [WorldCities](http://vlado.fmf.uni-lj.si/pub/networks/data/mix/mixed.htm); [GaWC](https://www.lboro.ac.uk/microsites/geography/gawc/data.html)   |  |  |  |  
+|  5 | [WorldCities](http://vlado.fmf.uni-lj.si/pub/networks/data/mix/mixed.htm); [GaWC](https://www.lboro.ac.uk/microsites/geography/gawc/data.html)   | 315 cities  | 100 global service firms  | 0:6  |  
 |  6 | [Malaria](http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:data:conv#malaria)   | 297 genes   | 806 substrings  | {0,1}  | 
 |  7 | [The Periplus Maris Erythraei](https://bora.uib.no/bora-xmlui/handle/1956/11470)   |  |  |  |
 |  8 | [French National Assembly](https://netset.telecom-paris.fr/pages/national_assembly.html); [Pajek](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:fra)   |  |  |  |
