@@ -22,3 +22,8 @@ To be converted:
 
 1.  [Angoulême in the eighteenth century](https://histecon.sites.fas.harvard.edu/visualizing/angouleme/index.html)
 2.  [Cambridge economists](https://histecon.sites.fas.harvard.edu/visualizing/graphing/economists.html)
+3.  [Bundestag Roll Call Vote Data](https://dataverse.harvard.edu/dataverse/btvote)
+4.  [Congressional Voting Records Data Set](https://paperswithcode.com/dataset/cvr)
+3.  []()
+3.  []()
+3.  []()
