@@ -18,15 +18,9 @@
 | 13 | [EuProtein / Manly & Alberto](https://github.com/bavla/NormNet/blob/main/data/Manly&Alberto/README.md#euprotein) | 22 Eu countries  | 18 industry groups | R<sub>0</sub><sup>+</sup> |
 | 14 | [Plants Steneryd Reserve / Manly & Alberto](https://github.com/bavla/NormNet/tree/main/data/Manly%26Alberto#plants-steneryd-reserve) | 25 plant species  | 17 plots | R<sub>0</sub><sup>+</sup> |    
 | 15 | [1984 US Congressional Voting Records Data Set](https://paperswithcode.com/dataset/cvr); [CSV](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:cvr)    | 435 senators | 16 cases   | {p,n,z}  |
+| 16 | [Angoulême in the eighteenth century](https://histecon.sites.fas.harvard.edu/visualizing/angouleme/index.html)  |  |  |  |
+| 17 | [Cambridge economists](https://histecon.sites.fas.harvard.edu/visualizing/graphing/economists.html)  |  |  |  |
+| 18 | [Bundestag Roll Call Vote Data](https://dataverse.harvard.edu/dataverse/btvote) |  |  |  |
+|    | []() |  |  |  |
 |    | []() |  |  |  |
 
-
-To be converted:
-
-1.  [Angoulême in the eighteenth century](https://histecon.sites.fas.harvard.edu/visualizing/angouleme/index.html)
-2.  [Cambridge economists](https://histecon.sites.fas.harvard.edu/visualizing/graphing/economists.html)
-3.  [Bundestag Roll Call Vote Data](https://dataverse.harvard.edu/dataverse/btvote)
-4.  []()
-3.  []()
-3.  []()
-3.  []()
