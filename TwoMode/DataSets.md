@@ -21,6 +21,12 @@
 | 16 | [Angoulême in the eighteenth century](https://histecon.sites.fas.harvard.edu/visualizing/angouleme/index.html)  |  |  |  |
 | 17 | [Cambridge economists](https://histecon.sites.fas.harvard.edu/visualizing/graphing/economists.html)  |  |  |  |
 | 18 | [Bundestag Roll Call Vote Data](https://dataverse.harvard.edu/dataverse/btvote) |  |  |  |
+| 19 | [Supreme Court / Mrvar, A., Doreian, P. (2009) Partitioning Signed Two-Mode Networks.](https://github.com/bavla/NormNet/tree/main/data/SC) | 40 cases  | 9 judges  | {p,n,z}  |
+|    | []() |  |  |  |
 |    | []() |  |  |  |
 |    | []() |  |  |  |
 
+
+
+
+40 9
