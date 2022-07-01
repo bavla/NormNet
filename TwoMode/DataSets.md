@@ -16,8 +16,11 @@
 | 11 | [Divorce in US](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/divorce.net)  |  |  |  |
 | 12 | [Supreme Court Justices votes on 26 important decisions 2000-2001](http://vlado.fmf.uni-lj.si/pub/networks/data/GBM/SupremeCourt/SupremeCourt.net)  |  |  |  |
 | 13 | [EuProtein / Manly & Alberto](https://github.com/bavla/NormNet/blob/main/data/Manly&Alberto/README.md#euprotein) |  |  |  |
-| 14 | [Plants Steneryd Reserve / Manly & Alberto](https://github.com/bavla/NormNet/tree/main/data/Manly%26Alberto#plants-steneryd-reserve)  |  |  |  |
+| 14 | [Plants Steneryd Reserve / Manly & Alberto](https://github.com/bavla/NormNet/tree/main/data/Manly%26Alberto#plants-steneryd-reserve)  | 22 Eu countries  | 18 industry groups | R<sup>+</sup> |
+|    |   | 25 plant species  | 17 plots |  |
 | 15 | [1984 US Congressional Voting Records Data Set](https://paperswithcode.com/dataset/cvr); [CSV](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:cvr)    |  |    | signed+  |
+|    | []() |  |  |  |
+
 
 To be converted:
 
