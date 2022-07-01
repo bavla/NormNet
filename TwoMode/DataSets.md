@@ -12,7 +12,7 @@
 |  7 | [The Periplus Maris Erythraei](https://bora.uib.no/bora-xmlui/handle/1956/11470)   |  |  |  |
 |  8 | [French National Assembly](https://netset.telecom-paris.fr/pages/national_assembly.html); [Pajek](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:fra)   |  |  |  |
 |  9 | [They rule 2004](http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:nets:mix:trule) |  |  |  |
-| 10 | [Slovenian magazines and journals 1999 and 2000](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/journals.htm)  | 100000 readers | 141 journals  | cols projection  |
+| 10 | [Slovenian magazines and journals 1999 and 2000](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/journals.htm)  | 100000 readers | 124 journals  | cols projection  |
 | 11 | [Divorce in US](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/divorce.net)  |  |  |  |
 | 12 | [Supreme Court Justices votes on 26 important decisions 2000-2001](http://vlado.fmf.uni-lj.si/pub/networks/data/GBM/SupremeCourt/SupremeCourt.net)  |  |  |  |
 | 13 | [EuProtein / Manly & Alberto](https://github.com/bavla/NormNet/blob/main/data/Manly&Alberto/README.md#euprotein) | 22 Eu countries  | 18 industry groups | R<sub>0</sub><sup>+</sup> |
