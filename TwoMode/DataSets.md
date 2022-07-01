@@ -17,7 +17,7 @@
 | 12 | [Supreme Court Justices votes on 26 important decisions 2000-2001](http://vlado.fmf.uni-lj.si/pub/networks/data/GBM/SupremeCourt/SupremeCourt.net)  |  |  |  |
 | 13 | [EuProtein / Manly & Alberto](https://github.com/bavla/NormNet/blob/main/data/Manly&Alberto/README.md#euprotein) | 22 Eu countries  | 18 industry groups | R<sub>0</sub><sup>+</sup> |
 | 14 | [Plants Steneryd Reserve / Manly & Alberto](https://github.com/bavla/NormNet/tree/main/data/Manly%26Alberto#plants-steneryd-reserve) | 25 plant species  | 17 plots | R<sub>0</sub><sup>+</sup> |    
-| 15 | [1984 US Congressional Voting Records Data Set](https://paperswithcode.com/dataset/cvr); [CSV](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:cvr)    |  |    | {p,n,z}  |
+| 15 | [1984 US Congressional Voting Records Data Set](https://paperswithcode.com/dataset/cvr); [CSV](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:cvr)    | 435 senators | 16 cases   | {p,n,z}  |
 |    | []() |  |  |  |
 
 
