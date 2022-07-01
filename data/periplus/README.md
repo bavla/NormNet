@@ -11,9 +11,7 @@ Greek text following Frisk, H. (1927). Le Périple de la Mer Érythrée - Suivi 
 
 English translations of commodities following Casson, Lionel. (1989). The Periplus Maris Erythraei. Princeton: Princeton University Press.
 
-File created Feb. 9, 2016
-
-Format: CSV (comma separated values)
+File created Feb. 9, 2016; format: CSV (comma separated values)
 
 Columns contain id and labels for a two mode network of ports (id 1001-)  commodities (id 2001-) as well as for  directed edges between them  (columns labeled ‘source’ and ‘target’) and a set of nodes representing groups of commodities (2101-)
 
