@@ -11,7 +11,7 @@
 |  6 | [Malaria](http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:data:conv#malaria)   | 297 genes   | 806 substrings  | {0,1}  | 
 |  7 | [The Periplus Maris Erythraei](https://bora.uib.no/bora-xmlui/handle/1956/11470)   |  |  |  |
 |  8 | [French National Assembly](https://netset.telecom-paris.fr/pages/national_assembly.html); [Pajek](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:fra)   |  |  |  |
-|  9 | [They rule 2004](http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:nets:mix:trule) |  |  |  |
+|  9 | [They rule 2004](http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:nets:mix:trule) | 4657 persons  | 510 companies  | {0,1}  |
 | 10 | [Slovenian magazines and journals 1999 and 2000](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/journals.htm)  | 100000 readers | 124 journals  | cols projection  |
 | 11 | [Divorce in US](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/divorce.net)  | 50 states  | 9 causes | {0,1}  |
 | 12 | [Supreme Court Justices votes on 26 important decisions 2000-2001](http://vlado.fmf.uni-lj.si/pub/networks/data/GBM/SupremeCourt/SupremeCourt.net)  | 26 decisions  | 9 judges | {y,n,a} |
