@@ -15,8 +15,8 @@
 | 10 | [Slovenian magazines and journals 1999 and 2000](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/journals.htm)  | 100000 readers | 124 journals  | cols projection  |
 | 11 | [Divorce in US](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/divorce.net)  | 50 states  | 9 causes | {0,1}  |
 | 12 | [Supreme Court Justices votes on 26 important decisions 2000-2001](http://vlado.fmf.uni-lj.si/pub/networks/data/GBM/SupremeCourt/SupremeCourt.net)  | 26 decisions  | 9 judges | {y,n,a} |
-| 13 | [EuProtein / Manly & Alberto](https://github.com/bavla/NormNet/blob/main/data/Manly&Alberto/README.md#euprotein) | 22 Eu countries  | 18 industry groups | R<sub>0</sub><sup>+</sup> |
-| 14 | [Plants Steneryd Reserve / Manly & Alberto](https://github.com/bavla/NormNet/tree/main/data/Manly%26Alberto#plants-steneryd-reserve) | 25 plant species  | 17 plots | R<sub>0</sub><sup>+</sup> |    
+| 13 | [EuProtein / Manly & Alberto](https://github.com/bavla/NormNet/blob/main/data/Manly&Alberto/README.md#euprotein) | 22 Eu countries  | 18 industry groups | ℝ<sub>0</sub><sup>+</sup> |
+| 14 | [Plants Steneryd Reserve / Manly & Alberto](https://github.com/bavla/NormNet/tree/main/data/Manly%26Alberto#plants-steneryd-reserve) | 25 plant species  | 17 plots | ℝ<sub>0</sub><sup>+</sup> |    
 | 15 | [1984 US Congressional Voting Records Data Set](https://paperswithcode.com/dataset/cvr); [CSV](http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:2m:dat:cvr)    | 435 senators | 16 cases   | {p,n,z}  |
 | 16 | [Angoulême in the eighteenth century](https://histecon.sites.fas.harvard.edu/visualizing/angouleme/index.html)  |  |  |  |
 | 17 | [Cambridge economists](https://histecon.sites.fas.harvard.edu/visualizing/graphing/economists.html)  |  |  |  |
