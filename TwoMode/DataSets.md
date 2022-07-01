@@ -3,7 +3,7 @@
 
 |  n | network  | rows | cols | type |
 |----|----------|---|---|---|
-|  1 | [Corporate interlocks in Scotland (1904-5)](http://vlado.fmf.uni-lj.si/pub/networks/data/esna/scotland.htm)    |  |   |  |
+|  1 | [Corporate interlocks in Scotland (1904-5)](http://vlado.fmf.uni-lj.si/pub/networks/data/esna/scotland.htm)    | 136 directors   | 108 companies  | {0,1}  |
 |  2 | [IMDb movie-actor network (2006)](http://mozart.diei.unipg.it/gdcontest/contest2005/gdevolving2005.html); [Pajek](http://vlado.fmf.uni-lj.si/pub/networks/data/GD/gd05/imdb.zip)   |  |  |  |
 |  3 | [Dutch elite (2006)](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/DutchElite.htm)   |  |  |  |
 |  4 | [Authorship in bib of Imrich W, Klavžar S. (1999) Graph products](http://vlado.fmf.uni-lj.si/pub/networks/data/2mode/Sandi/Sandi.htm)    |  |  |  |
