@@ -21,6 +21,7 @@ Dataset published under Creative Commons license 4.0: http://creativecommons.org
 
 ## Conversion into Pajek files
 
+I copied the data from a given Dataset.csv into some files: places.csv, commod.csv, D.csv. Using R I created some auxiliary files 
 ```
 > wdir <- "C:/Users/vlado/DL/data/2-mode/Periplus/periplus"
 > setwd(wdir)
@@ -35,7 +36,7 @@ Dataset published under Creative Commons license 4.0: http://creativecommons.org
 4 1004            Koloe NA      Polis 39.25 14.54
 5 1005            Aksum NA Metropolis 38.43 14.08
 6 1006           Adulis NA   Emporion 39.41 15.16
-> C <- read.csv("comod.csv",head=FALSE,sep=";")
+> C <- read.csv("commod.csv",head=FALSE,sep=";")
 > dim(C)
 [1] 112   6
 > head(C)
@@ -84,3 +85,13 @@ K
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 > vector2clu(K,Clu="modes.clu")
 ```
+that I finally combined using Textpad into Pajek files:
+* periplus.net - all networks combined as multirelational network
+* xy.vec - positions of places
+* modes.clu - modes of nodes
+  * 0 - not in the Periplus network
+  * 1 - places 1001:1057
+  * 2 - commodities 2001:2110 
+  * 3 - single commodity groups 2001, 2002, 2028, 2030, 2032, 2044, 2054, 2055, 2070, 2072, 2079
+  * 4 - commodity groups 2111:2130
+
