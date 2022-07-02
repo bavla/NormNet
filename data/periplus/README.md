@@ -68,7 +68,7 @@ I copied the data from a given Dataset.csv into some files: places.csv, commod.c
 > xy <- file("xy.vec","w")
 > for(v in 1:nrow(P)) cat(P$V5[v],' ',P$V6[v],'\n',sep='',file=xy)
 > close(xy)
-> K <- rep(0,2130)
+> K <- rep(0,2132)
 > length(K)
 [1] 2130
 > g <- c(2001, 2002, 2028, 2030, 2032, 2044, 2054, 2055, 2070, 2072, 2079)
@@ -76,7 +76,7 @@ I copied the data from a given Dataset.csv into some files: places.csv, commod.c
  [1] 2001 2002 2028 2030 2032 2044 2054 2055 2070 2072 2079
 > K[1001:1057] <- 1 # place
 > K[2001:2110] <- 2 # commodity
-> K[2111:2130] <- 4 # group
+> K[2111:2132] <- 4 # group
 > K[g] <- 3 # commodity and group
 > table(K)
 K
@@ -93,5 +93,5 @@ that I finally combined using Textpad into Pajek files:
   * 1 - places 1001:1057
   * 2 - commodities 2001:2110 
   * 3 - single commodity groups 2001, 2002, 2028, 2030, 2032, 2044, 2054, 2055, 2070, 2072, 2079
-  * 4 - commodity groups 2111:2130
+  * 4 - commodity groups 2111:2132
 
