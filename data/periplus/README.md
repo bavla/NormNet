@@ -95,3 +95,4 @@ that I finally combined using Textpad into Pajek files:
   * 3 - single commodity groups 2001, 2002, 2028, 2030, 2032, 2044, 2054, 2055, 2070, 2072, 2079
   * 4 - commodity groups 2111:2132
 
+An arc (commodity, port) tells that the commodity is imported to the port; and an arc (port, commodity) that the commodity is exported from the port.
