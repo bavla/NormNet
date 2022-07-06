@@ -1,9 +1,9 @@
 # The Periplus of the Erythraean Sea
-https://bora.uib.no/bora-xmlui/handle/1956/11470
+https://bora.uib.no/bora-xmlui/handle/1956/11470 ; https://bora.uib.no/bora-xmlui/handle/1956/15806
 
 Dataset for network analysis extracted from the ancient Greek text known as «The Periplus of the Erythraean Sea», containing lists of commodities and places (with geographical positions) mentioned in the text, and connections between them.
 
-Compiled December 2014 by Eivind Heldaas Seland, Department of archaeology, history, cultural studies and religion,  University of Bergen, eivind.seland@uib.no
+Compiled December 2014 by [Eivind Heldaas Seland](https://www.uib.no/en/persons/Eivind.Heldaas.Seland), Department of archaeology, history, cultural studies and religion,  University of Bergen, eivind.seland@uib.no
 
 Greek text following Frisk, H. (1927). Le Périple de la Mer Érythrée - Suivi d'une étyde sur la tradition et la langue. Göteborgs Högskolas Årsskrift, 33(1), 1-145.
 
