@@ -23,10 +23,10 @@
 | 18 | [Bundestag Roll Call Vote Data](https://dataverse.harvard.edu/dataverse/btvote) |  |  |  |
 | 19 | [Supreme Court / Mrvar, A., Doreian, P. (2009) Partitioning Signed Two-Mode Networks.](https://github.com/bavla/NormNet/tree/main/data/SC) | 40 cases  | 9 judges  | {p,n,z}  |
 | 20   | [Eurovision 2022](https://github.com/bavla/NormNet/tree/main/data/Eurovision) | 25 songs | 40 countries | ℕ |
+| 21   | [Wikipedia Marvel cinematic universe phases](https://github.com/bavla/NormNet/tree/main/data/marvel) | 59 characters | 23 movies | (0,1) |
 |    | []() |  |  |  |
-|    | []() |  |  |  |
 
 
 
 
-40 9
+
