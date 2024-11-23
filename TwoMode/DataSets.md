@@ -1,6 +1,6 @@
 # Two-mode network datasets
 
-* [Network data sets](https://github.com/bavla/Nets/tree/master/data)
+[Network data sets](https://github.com/bavla/Nets/tree/master/data/README.md)
 
 |  n | network  | rows | cols | type |
 |----|----------|---|---|---|
