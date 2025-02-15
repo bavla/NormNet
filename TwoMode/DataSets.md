@@ -29,6 +29,9 @@
 | 23   | [Event sequences visualization](https://github.com/bavla/Nets/blob/master/data/mix/TableA11.net) | 63 papers | 40 methods | (0,1) |
 |    | []() |  |  |  |
 
+<hr>
+
+[Network data sets](https://github.com/bavla/Nets/tree/master/data/README.md)
 
 
 
