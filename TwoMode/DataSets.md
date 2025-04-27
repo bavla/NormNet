@@ -25,8 +25,9 @@
 | 19 | [Supreme Court / Mrvar, A., Doreian, P. (2009) Partitioning Signed Two-Mode Networks.](https://github.com/bavla/NormNet/tree/main/data/SC) | 40 cases  | 9 judges  | {p,n,z}  |
 | 20   | [Eurovision 2022](https://github.com/bavla/NormNet/tree/main/data/Eurovision) | 25 songs | 40 countries | ℕ |
 | 21   | [Wikipedia Marvel cinematic universe phases](https://github.com/bavla/NormNet/tree/main/data/marvel) | 59 characters | 23 movies | (0,1) |
-| 22   | [Plants](https://github.com/bavla/NormNet/tree/main/data/plants) | 34781 plants | 70 states | (0,1) |
-| 23   | [Event sequences visualization](https://github.com/bavla/Nets/blob/master/data/mix/TableA11.net) | 63 papers | 40 methods | (0,1) |
+| 22   | [English dictionary](https://github.com/bavla/NormNet/tree/main/data/dict) | 34781 plants | 70 states | (0,1) |
+| 23   | [Plants](https://github.com/bavla/NormNet/tree/main/data/plants) | 34781 plants | 70 states | (0,1) |
+| 24   | [Event sequences visualization](https://github.com/bavla/Nets/blob/master/data/mix/TableA11.net) | 63 papers | 40 methods | (0,1) |
 |    | []() |  |  |  |
 
 <hr>
