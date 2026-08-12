@@ -1,5 +1,6 @@
 # URLs
 
+Documents
   - https://inarwhal.github.io/NetworkAnalysisR-book/ch11-Two-mode-Networks.html
   - https://faculty.ucr.edu/~hanneman/nettext/C17_Two_mode.html
   - https://www.stats.ox.ac.uk/~snijders/siena/Twomode_s.pdf
