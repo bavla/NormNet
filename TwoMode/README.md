@@ -4,4 +4,5 @@
   - [Two-mode network datasets](DataSets.md)
   - [EUSN 2026: Network Analysis Through the Lens of OpenAlex](https://github.com/bavla/OpenAlex/blob/main/docs/OA_EUSN26.pdf)
   - [COMPSTAT 2026: Variations on projection of 2-mode network](https://github.com/bavla/NormNet/blob/main/docs/compstat26.pdf)
+  - [Applied statistics 2026: Generalized Newman's normalization](https://github.com/bavla/NormNet/blob/main/docs/VB_AS26.pdf)
   - [URLs](URLs.md)
