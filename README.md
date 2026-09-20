@@ -1,4 +1,4 @@
 # Network normalizations
 
-  - [Two-mode networks](./Twomode)
+  - [Two-mode networks](./TwoMode)
   - Network weight compatibility normalizations
