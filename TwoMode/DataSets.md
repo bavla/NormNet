@@ -29,7 +29,7 @@
 | 23   | [Plants](https://github.com/bavla/NormNet/tree/main/data/plants) | 34781 plants | 70 states | (0,1) |
 | 24   | [Event sequences visualization](https://github.com/bavla/Nets/blob/master/data/mix/TableA11.net) | 63 papers | 40 methods | (0,1) |
 | 25   | [Barnes-Burkett elite affiliations (1962)](https://github.com/bavla/NormNet/blob/main/data/barnes/barnes.net) | 20 persons | 24 institutions | (0,1) |
-|    | []() |  |  |  |
+| 26   | [Jester joke ratings 100 (2001) / ZIP](https://github.com/bavla/NormNet/blob/main/data/Jester/jester.zip)  | 73421 Users | 100 Jokes  | ℝ |
 |    | []() |  |  |  |
 |    | []() |  |  |  |
 |    | []() |  |  |  |
