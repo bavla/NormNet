@@ -23,6 +23,23 @@ PNO, pulses, nuts, and oilseed; F&V, fruit and vegetables; AGR, agriculture, for
 MIN, mining and quarrying; MAN, manufacturing; PS, power and water supplies; CON, construction;
 SER, services; FIN, finance; SPS, social and personal services; TC, transport and communications.
 
+Example: computing strict fractional projection to countries
+```
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> source("https://raw.githubusercontent.com/bavla/Nets/refs/heads/master/netsWeight/netsWeight.R")
+> wdir <- "C:/data/2-mode/Manly+Alberto"
+> setwd(wdir)
+> P <- as.matrix(read.csv("EuProtein.csv",sep=",",skip=5,head=TRUE,row.names=1))
+> M <- t(P)
+> Ms <- normalize_matrix_strict(M)
+> Mn <- normalize_matrix_Markov(M)
+> Cs <- t(Ms) %*% Mn
+> diag(Cs) <- 0
+> matrix2net(Cs,Net="EuProteinCsC.net")
+```
+
+
+
 ## Plants Steneryd Reserve
 
 25 plant species and 17 plots
